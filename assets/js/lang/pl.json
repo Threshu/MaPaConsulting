@@ -1,0 +1,319 @@
+{
+  "meta": {
+    "title": "MaPa Consulting - Doskonałość operacyjna",
+    "description": "Doradztwo w zakresie doskonałości operacyjnej, optymalizacji procesów i wdrażania AI"
+  },
+  "nav": {
+    "home": "Strona główna",
+    "about": "O mnie",
+    "skills": "Umiejętności",
+    "services": "Usługi",
+    "projects": "Projekty",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "greeting": "Witaj, jestem",
+    "name": "Mario Pape",
+    "title": "Dyrektor zarządzający & Konsultant",
+    "subtitle": "Certyfikowany manager AI",
+    "description": "Z 30-letnim międzynarodowym doświadczeniem specjalizującym się w doskonałości operacyjnej, restrukturyzacji, optymalizacji procesów i wdrażaniu AI.",
+    "contactInfo": {
+      "phone": "Telefon",
+      "email": "E-mail",
+      "location": "Lokalizacja"
+    }
+  },
+  "about": {
+    "title": "O mnie",
+    "description1": "MAPA Consulting specjalizuje się w doskonałości operacyjnej poprzez restrukturyzację, optymalizację procesów, strategie przywództwa i AI.",
+    "description2": "Z bogatym doświadczeniem w zarządzaniu i transformacji firm produkcyjnych, oferuję niestandardowe rozwiązania, które zapewniają trwałe wyniki.",
+    "description3": "Moja wiedza obejmuje zarządzanie LEAN, produkcję JIT, zarządzanie jakością, Przemysł 4.0, ERP i wdrażanie AI, aby pozycjonować firmy konkurencyjnie wobec przyszłych wyzwań.",
+    "stats": {
+      "experience": {
+        "number": "30",
+        "title": "Lat doświadczenia"
+      },
+      "projects": {
+        "number": "50+",
+        "title": "Ukończonych projektów"
+      },
+      "companies": {
+        "number": "25+",
+        "title": "Wspieranych firm"
+      }
+    }
+  },
+  "skills": {
+    "title": "Umiejętności",
+    "management": {
+      "title": "Zarządzanie",
+      "subtitle": "Przywództwo & Strategia",
+      "skills": [
+        {"name": "Przywództwo operacyjne", "percentage": "95"},
+        {"name": "Zarządzanie tymczasowe", "percentage": "90"},
+        {"name": "Rozwój strategii", "percentage": "85"},
+        {"name": "Zarządzanie zmianą", "percentage": "90"}
+      ]
+    },
+    "operations": {
+      "title": "Produkcja",
+      "subtitle": "Optymalizacja & Procesy",
+      "skills": [
+        {"name": "Zarządzanie LEAN", "percentage": "95"},
+        {"name": "Produkcja JIT", "percentage": "90"},
+        {"name": "Kaizen/CIP", "percentage": "90"},
+        {"name": "Łańcuch dostaw", "percentage": "85"}
+      ]
+    },
+    "technology": {
+      "title": "Technologia",
+      "subtitle": "Digitalizacja & AI",
+      "skills": [
+        {"name": "Przemysł 4.0", "percentage": "90"},
+        {"name": "Wdrażanie AI", "percentage": "85"},
+        {"name": "Systemy ERP", "percentage": "80"},
+        {"name": "Digitalizacja", "percentage": "85"}
+      ]
+    }
+  },
+  "qualification": {
+    "experience": {
+      "title": "Doświadczenie",
+      "items": [
+        {
+          "title": "Dyrektor zarządzający",
+          "organization": "Różne firmy",
+          "years": "2010 - Obecnie",
+          "description": "Ogólna odpowiedzialność za obszary operacyjne i kierunek strategiczny"
+        },
+        {
+          "title": "COO / CTO",
+          "organization": "Firmy produkcyjne",
+          "years": "2000 - 2010",
+          "description": "Zarządzanie operacjami i rozwojem technologicznym"
+        },
+        {
+          "title": "Kierownik produkcji",
+          "organization": "Lokalizacje międzynarodowe",
+          "years": "1995 - 2000",
+          "description": "Odpowiedzialność za miejsca produkcji i optymalizację procesów"
+        }
+      ]
+    },
+    "certification": {
+      "title": "Certyfikaty",
+      "items": [
+        {
+          "title": "Certyfikowany manager AI",
+          "organization": "Akademia AI Niemcy",
+          "years": "2023",
+          "description": "Specjalizacja w strategiach AI i wdrażaniu"
+        },
+        {
+          "title": "Ekspert zarządzania LEAN",
+          "organization": "Instytut LEAN",
+          "years": "2018",
+          "description": "Kompleksowa certyfikacja w zarządzaniu LEAN"
+        },
+        {
+          "title": "Interim Manager",
+          "organization": "DDIM",
+          "years": "2015",
+          "description": "Kwalifikacja do profesjonalnego zarządzania tymczasowego"
+        }
+      ]
+    }
+  },
+  "services": {
+    "title": "Usługi",
+    "viewMore": "Zobacz więcej",
+    "items": [
+      {
+        "title": "Odpowiedzialność operacyjna i produkcyjna",
+        "description": "Przejęcie odpowiedzialności operacyjnej jako interim manager, optymalizacja procesów produkcyjnych i wdrażanie najlepszych praktyk.",
+        "points": [
+          "Interim Management dla jednostek produkcyjnych",
+          "Optymalizacja procesów w produkcji",
+          "Wdrażanie najlepszych praktyk",
+          "Zwiększenie wydajności w procesach produkcyjnych",
+          "Restrukturyzacja zakładów produkcyjnych"
+        ]
+      },
+      {
+        "title": "Rozwój i wdrażanie strategii",
+        "description": "Opracowywanie dostosowanych strategii biznesowych i wsparcie w praktycznym wdrażaniu z wymiernymi wynikami.",
+        "points": [
+          "Strategiczne planowanie biznesowe",
+          "Opracowywanie strategii wzrostu",
+          "Wsparcie wdrożeniowe dla nowych strategii",
+          "Rozwój KPI i monitorowanie sukcesu",
+          "Strategiczne zarządzanie zmianą"
+        ]
+      },
+      {
+        "title": "Zarządzanie jakością i optymalizacja procesów",
+        "description": "Ustanawianie i optymalizacja systemów zarządzania jakością, ciągłe doskonalenie poprzez zasady LEAN i Kaizen.",
+        "points": [
+          "Wdrażanie systemów zarządzania jakością",
+          "Wprowadzanie zarządzania LEAN",
+          "Kaizen i ciągłe doskonalenie",
+          "Analiza i przeprojektowanie procesów",
+          "Analiza błędów i zapobieganie"
+        ]
+      },
+      {
+        "title": "Innowacje i rozwój produktów",
+        "description": "Doradztwo w rozwoju innowacyjnych produktów i usług, wsparcie w wprowadzaniu na rynek i skalowaniu.",
+        "points": [
+          "Zarządzanie innowacjami",
+          "Wsparcie dla rozwoju produktów",
+          "Strategie wprowadzania na rynek",
+          "Koncepcje skalowania dla nowych produktów",
+          "Zwinne metody rozwoju"
+        ]
+      },
+      {
+        "title": "Zastosowania i wdrażanie AI",
+        "description": "Identyfikacja potencjału AI w firmach, rozwój strategii AI i wsparcie w praktycznym wdrażaniu.",
+        "points": [
+          "Analiza potencjału AI w firmach",
+          "Rozwój strategii AI",
+          "Wsparcie wdrożeniowe dla rozwiązań AI",
+          "AI w produkcji i Przemysł 4.0",
+          "Szkolenia i edukacja w zakresie wykorzystania AI"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projekty",
+    "detailsButton": "Szczegóły",
+    "featured": "Wyróżniony - ",
+    "categories": {
+      "all": "Wszystkie",
+      "production": "Produkcja",
+      "optimization": "Optymalizacja",
+      "industry4": "Przemysł 4.0",
+      "quality": "Jakość",
+      "greenfield": "Greenfield"
+    },
+    "items": [
+      {
+        "title": "Międzynarodowe zakłady produkcyjne",
+        "category": "production",
+        "description": "Utworzenie zakładów produkcyjnych na poziomie międzynarodowym z zoptymalizowanymi procesami i efektywnymi strukturami.",
+        "info": {
+          "sector": "Branża - <span>Produkcja</span>",
+          "scope": "Zakres - <span>Kompletne utworzenie</span>",
+          "role": "Rola - <span>Kierownik projektu</span>",
+          "result": "Wynik - <span>25% wzrost efektywności</span>"
+        }
+      },
+      {
+        "title": "Przeniesienie produkcji",
+        "category": "production",
+        "description": "Strategiczne przeniesienie zakładów produkcyjnych z minimalnymi przerwami operacyjnymi i zoptymalizowanymi procesami.",
+        "info": {
+          "sector": "Branża - <span>Dostawca motoryzacyjny</span>",
+          "scope": "Zakres - <span>Przeniesienie 3 zakładów</span>",
+          "role": "Rola - <span>Tymczasowy COO</span>",
+          "result": "Wynik - <span>30% redukcja kosztów</span>"
+        }
+      },
+      {
+        "title": "Optymalizacja LEAN i JIT",
+        "category": "optimization",
+        "description": "Optymalizacja zakładów produkcyjnych poprzez LEAN, produkcję JIT i zasady Kaizen dla maksymalnej efektywności.",
+        "info": {
+          "sector": "Branża - <span>Produkcja elektroniki</span>",
+          "scope": "Zakres - <span>Kompletne przeprojektowanie procesu</span>",
+          "role": "Rola - <span>Ekspert LEAN</span>",
+          "result": "Wynik - <span>40% wzrost produktywności</span>"
+        }
+      },
+      {
+        "title": "Digitalizacja Przemysł 4.0",
+        "category": "industry4",
+        "description": "Przygotowanie i wdrożenie strategii Przemysłu 4.0 do digitalizacji i automatyzacji produkcji, w tym AI.",
+        "info": {
+          "sector": "Branża - <span>Inżynieria mechaniczna</span>",
+          "scope": "Zakres - <span>Transformacja cyfrowa</span>",
+          "role": "Rola - <span>CTO / Doradca cyfrowy</span>",
+          "result": "Wynik - <span>85% poziom automatyzacji</span>"
+        }
+      },
+      {
+        "title": "Planowanie Greenfield",
+        "category": "greenfield",
+        "description": "Kompletne planowanie i wdrażanie zakładów produkcyjnych na nowych terenach z najnowocześniejszymi technologiami.",
+        "info": {
+          "sector": "Branża - <span>Produkcja</span>",
+          "scope": "Zakres - <span>Kompletne planowanie</span>",
+          "role": "Rola - <span>Kierownik projektu</span>",
+          "result": "Wynik - <span>Terminowe uruchomienie</span>"
+        }
+      },
+      {
+        "title": "System zarządzania jakością",
+        "category": "quality",
+        "description": "Ustanowienie systemu zarządzania jakością dla firmy przemysłowej z 4 międzynarodowymi zakładami produkcyjnymi.",
+        "info": {
+          "sector": "Branża - <span>Firma przemysłowa</span>",
+          "scope": "Zakres - <span>4 międzynarodowe lokalizacje</span>",
+          "role": "Rola - <span>Kierownik jakości</span>",
+          "result": "Wynik - <span>Certyfikacja ISO 9001</span>"
+        }
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Opinie klientów",
+    "items": [
+      {
+        "text": "Pan Pape zoptymalizował naszą produkcję w jak najkrótszym czasie jako tymczasowy manager i osiągnął wymierne poprawy. Przekonało nas jego ustrukturyzowane podejście i dogłębna wiedza w zarządzaniu LEAN.",
+        "date": "Wrzesień 2023",
+        "name": "Dr Thomas Müller",
+        "position": "CEO, Firma przemysłowa GmbH"
+      },
+      {
+        "text": "Praca z Mario Pape w obszarze wdrażania AI była pełnym sukcesem. Potrafi sprawić, że złożone tematy stają się zrozumiałe i tworzy praktyczne rozwiązania, które bezpośrednio przyczyniają się do sukcesu biznesowego.",
+        "date": "Maj 2023",
+        "name": "Maria Schmidt",
+        "position": "CTO, Tech Solutions AG"
+      },
+      {
+        "text": "Restrukturyzacja naszych międzynarodowych lokalizacji była dużym wyzwaniem. Dzięki strategicznemu doradztwu Pana Pape mogliśmy z sukcesem ukształtować proces i osiągnąć znaczne oszczędności kosztów przy jednoczesnej poprawie jakości.",
+        "date": "Listopad 2022",
+        "name": "Robert Wagner",
+        "position": "COO, Global Manufacturing Inc."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Kontakt",
+    "description": "Skontaktuj się w sprawie wstępnej konsultacji dotyczącej Twoich indywidualnych wyzwań.",
+    "emailTitle": "E-mail",
+    "phoneTitle": "Telefon",
+    "addressTitle": "Adres",
+    "writeMe": "Napisz do mnie",
+    "callMe": "Zadzwoń do mnie",
+    "viewLocation": "Zobacz lokalizację",
+    "form": {
+      "name": "Imię",
+      "email": "E-mail",
+      "subject": "Temat",
+      "message": "Wiadomość",
+      "send": "Wyślij wiadomość"
+    },
+    "info": {
+      "email": "info@mapa-unternehmensberatung.de",
+      "phone": "+49 175 9030149",
+      "address": "Lindenstraße 2, 97839 Esslebach"
+    }
+  },
+  "footer": {
+    "title": "MaPa Consulting",
+    "subtitle": "Doskonałość operacyjna",
+    "copyright": "© 2025 MaPa Consulting. Wszelkie prawa zastrzeżone."
+  }
+}
