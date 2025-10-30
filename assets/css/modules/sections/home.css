@@ -1,0 +1,119 @@
+/*===== Home Section =====*/
+.home {
+    background-color: var(--body-color);
+    height: 100vh;
+}
+
+.home__container {
+    position: relative;
+    height: 100%;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/*===== Quick Contact Section =====*/
+.home__quick-contact {
+    position: absolute;
+    top: 1.8rem;
+    right: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.home__quick-contact-links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+/* Base contact link styling - DRY principle */
+.home__contact-link {
+    font-size: 1.8rem;
+    color: var(--skin-color);
+    transition: all .3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home__contact-link:hover {
+    transform: translateY(-0.25rem);
+}
+
+/* Modifier: LinkedIn - external social media link */
+.home__contact-link--linkedin {
+    color: #0077B5;
+}
+
+.home__contact-link--linkedin:hover {
+    color: #005885;
+}
+
+/* Modifiers: Internal contact links maintain brand color on hover */
+.home__contact-link--phone:hover,
+.home__contact-link--email:hover {
+    color: var(--first-color-alt);
+}
+
+.home__img {
+    display: block;
+    width: 320px;
+    height: auto;
+    object-fit: contain;
+    justify-self: flex-start;
+    align-self: center;
+    margin-left: 5rem;
+    border-radius: 4px;
+}
+
+/* Usunięto dekoracyjne elementy */
+
+.home__data {
+    justify-self: flex-end;
+    margin-right: 5rem;
+    max-width: 500px;
+}
+
+.home__title {
+    font-size: var(--biggest-font-size);
+}
+
+.home__subtitle {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-0-75);
+}
+
+.home__description {
+    max-width: 450px;
+    margin-bottom: var(--mb-2);
+}
+
+.my__info {
+    display: flex;
+    column-gap: 1.8rem;
+    position: absolute;
+    left: 5rem;
+    bottom: 1.8rem;
+}
+
+.info__item {
+    display: flex;
+    align-items: center;
+}
+
+.info__title,
+.info__subtitle {
+    font-size: var(--small-font-size);
+}
+
+.info__title {
+    font-weight: var(--font-medium);
+}
+
+.info__icon {
+    font-size: 1.8rem;
+    color: var(--skin-color);
+    margin-right: var(--mb-0-75);
+}
+

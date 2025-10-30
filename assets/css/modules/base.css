@@ -1,0 +1,130 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+    /* Primary Colors */
+    --first-color: #1a4b84;           /* Dark Blue - Primary */
+    --first-color-alt: #0d3b70;       /* Darker Blue - Primary Hover */
+    
+    /* Secondary Colors */
+    --second-color: #c39e45;          /* Muted Gold - Secondary */
+    --second-color-alt: #aa8932;      /* Darker Gold - Secondary Hover */
+    
+    /* Business Color Mode */
+    --skin-color: #1a4b84;            /* Dark Blue as primary brand color */
+    --skin-color-light: #e9eef5;      /* Light Blue for highlights */
+    --title-color: #2b2b2b;           /* Dark Gray for Titles */
+    --text-color: #4a4a4a;            /* Medium Gray for Body Text */
+    --body-color: #f9f9f9;            /* Off-White for Body Background */
+    --box-color: #ffffff;             /* White for Container Backgrounds */
+    --scroll-bar-color: #dadada;      /* Light Gray for Scrollbar */
+    --scroll-thumb-color: #1a4b84;    /* Dark Blue for Scrollbar Thumb */
+    --button-text: #ffffff;           /* White text for buttons */
+
+    /* Accent Colors */
+    --accent-color: #167d7f;          /* Teal - Accent */
+    --accent-color-alt: #116264;      /* Darker Teal - Accent Hover */
+    
+    /* Alert Colors */
+    --success-color: #2e7d32;         /* Green for Success */
+    --info-color: #0277bd;            /* Blue for Information */
+    --warning-color: #f57f17;         /* Amber for Warnings */
+    --error-color: #c62828;           /* Red for Errors */
+
+    /*===== Font and Typography =====*/
+    --body-font: 'Poppins', sans-serif;
+
+    /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+    --biggest-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+
+    /*===== Font Weight =====*/
+    --font-medium: 500;
+    --font-bold: 600;
+
+    /*===== Margenes Bottom =====*/
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+
+    /*===== Z Index =====*/
+    --z-fixed: 10;
+    --z-modal: 1100;
+}
+
+/* Responsive Typography */
+@media screen and (max-width: 1024px) {
+    :root {
+        --biggest-font-size: 2rem;
+        --h1-font-size: 1.5rem;
+        --h2-font-size: 1.25rem;
+        --h3-font-size: 1.125rem;
+        --normal-font-size: .938rem;
+        --small-font-size: .813rem;
+        --smaller-font-size: .75rem;
+    }
+}
+
+/*=============== BASE ===============*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 0;
+}
+
+body,
+button,
+input {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+body {
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+h1, h2, h3 {
+    color: var(--title-color);
+    font-weight: var(--font-bold);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+button,
+input {
+    border: none;
+    outline: none;
+}

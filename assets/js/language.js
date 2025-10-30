@@ -92,32 +92,32 @@ function updateLanguageSelector() {
 	});
 }
 
-// Initialize language on page load
-document.addEventListener("DOMContentLoaded", () => {
+// Function to set up a language selector
+function setupLanguageSelector(selectorId) {
+	const languageSelect = document.querySelector(
+		`#${selectorId} .language-select`
+	);
+	if (!languageSelect) return;
+
+	const languageSelected = languageSelect.querySelector(".language-selected");
+
+	languageSelected.addEventListener("click", () => {
+		languageSelect.classList.toggle("active");
+	});
+
+	// Add event listeners to language options
+	languageSelect.querySelectorAll(".language-option").forEach((option) => {
+		option.addEventListener("click", () => {
+			const lang = option.getAttribute("data-lang");
+			changeLanguage(lang);
+			languageSelect.classList.remove("active"); // Close dropdown after selection
+		});
+	});
+}
+
+// Initialize language system
+function initializeLanguage() {
 	loadLanguageData(currentLang);
-
-	// Function to set up a language selector
-	function setupLanguageSelector(selectorId) {
-		const languageSelect = document.querySelector(
-			`#${selectorId} .language-select`
-		);
-		if (!languageSelect) return;
-
-		const languageSelected = languageSelect.querySelector(".language-selected");
-
-		languageSelected.addEventListener("click", () => {
-			languageSelect.classList.toggle("active");
-		});
-
-		// Add event listeners to language options
-		languageSelect.querySelectorAll(".language-option").forEach((option) => {
-			option.addEventListener("click", () => {
-				const lang = option.getAttribute("data-lang");
-				changeLanguage(lang);
-				languageSelect.classList.remove("active"); // Close dropdown after selection
-			});
-		});
-	}
 
 	// Set up both language selectors
 	setupLanguageSelector("language-switcher");
@@ -131,4 +131,12 @@ document.addEventListener("DOMContentLoaded", () => {
 			}
 		});
 	});
-});
+}
+
+// Initialize language on page load - wait for components
+if (document.readyState === "loading") {
+	window.addEventListener("componentsLoaded", initializeLanguage);
+} else {
+	// If componentsLoaded already fired or no components, initialize immediately
+	initializeLanguage();
+}

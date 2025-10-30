@@ -1,0 +1,204 @@
+/*=============== SCROLL UP ===============*/
+.scrollup {
+    position: fixed;
+    right: 1rem;
+    bottom: -30%;
+    background: var(--skin-color);
+    border-radius: .4rem;
+    display: inline-flex;
+    padding: .25rem;
+    z-index: 10000;
+    opacity: .8;
+    transition: .4s;
+}
+
+.scrollup:hover {
+    opacity: 1;
+}
+
+.scrollup__icon {
+    font-size: 2.5rem;
+    color: var(--skin-color-light);
+}
+
+/* Show Scroll Up*/
+.show-scroll {
+    bottom: 3rem;
+}
+
+/* Show Scroll Up */
+
+
+/*=============== LANGUAGE SWITCHER ===============*/
+.language-switcher {
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.language-select {
+    position: relative;
+    width: auto;
+    z-index: 1000;
+}
+
+.language-selected {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 50px;
+    height: 50px;
+}
+
+.language-selected:hover {
+    transform: translateY(-3px);
+}
+
+.language-selected .flag-icon {
+    width: 40px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.language-name {
+    font-size: var(--small-font-size);
+    color: var(--text-color);
+    flex-grow: 1;
+}
+
+.language-dropdown {
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 0;
+    transform: translateX(0) translateY(10px);
+    background: var(--box-color);
+    border-radius: 10px;
+    box-shadow: 0 -8px 25px rgba(26, 75, 132, 0.15);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    overflow: hidden;
+    width: 150px;
+    border: 2px solid rgba(26, 75, 132, 0.1);
+}
+
+.language-select.active .language-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0) translateY(0);
+}
+
+.language-option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 15px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    list-style: none;
+}
+
+.language-option:hover {
+    background: rgba(26, 75, 132, 0.08);
+}
+
+.language-option:hover .language-name {
+    color: var(--first-color);
+}
+
+.language-option .flag-icon {
+    width: 28px;
+    height: 21px;
+    object-fit: cover;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.language-option .language-name {
+    transition: color 0.2s ease;
+}
+
+/* Style for the currently active language */
+.language-option[data-active="true"] {
+    background: rgba(26, 75, 132, 0.05);
+    position: relative;
+}
+
+.language-option[data-active="true"] .language-name {
+    color: var(--first-color);
+    font-weight: var(--font-medium);
+}
+
+.language-option[data-active="true"]::before {
+    content: "✓";
+    position: absolute;
+    right: 12px;
+    color: var(--first-color);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Media queries dla przełącznika języka */
+@media screen and (max-width: 1023px) {
+    .language-switcher {
+        bottom: 1.5rem;
+        left: auto;
+        right: 2rem;
+        justify-content: flex-end;
+    }
+    
+    .language-dropdown {
+        right: 0;
+        left: auto;
+    }
+}
+
+/* Style dla mobilnego przełącznika języka */
+.mobile-only {
+    display: none;
+}
+
+/* Dodatkowe style dla mniejszych ekranów */
+@media screen and (max-width: 767px) {
+    #language-switcher {
+        display: none; /* Ukrywamy przełącznik w sidebarze na urządzeniach mobilnych */
+    }
+    
+    .mobile-only {
+        display: flex;
+    }
+    
+    #mobile-language-switcher {
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        z-index: 90;
+    }
+    
+    /* Upewniamy się, że przełącznik mobilny jest nad menu hamburgerowym */
+    .mobile-only .language-select {
+        z-index: 1000;
+    }
+}
+
+/*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar {
+    width: .60rem;
+    background-color: var(--scroll-bar-color);
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-thumb-color);
+    border-radius: .5rem;
+}
