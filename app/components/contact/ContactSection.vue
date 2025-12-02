@@ -20,7 +20,6 @@
 	.contact-section {
 		min-height: auto;
 		background-color: var(--color-section-bg);
-		padding: 4rem 0;
 	}
 
 	.contact-title {

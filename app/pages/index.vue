@@ -31,7 +31,6 @@
 	.home-section {
 		min-height: 100vh;
 		background-color: var(--color-body-bg);
-		padding: 4rem 0;
 		display: flex;
 		align-items: center;
 	}

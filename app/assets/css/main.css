@@ -5,6 +5,10 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
 
+@theme {
+    --container-8xl: 100rem;
+}
+
 /*=============== CSS VARIABLES ===============*/
 :root {
     /* Brand Colors - using Tailwind primary */
@@ -12,6 +16,9 @@
     
     /* Nuxt UI Color Override */
     --ui-primary: oklch(from #1a4b84 l c h);
+    
+    /* Container Width */
+    --ui-container: var(--container-8xl);
     
     /* Typography */
     --font-family: 'Poppins', sans-serif;

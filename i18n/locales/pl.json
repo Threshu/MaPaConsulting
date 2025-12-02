@@ -4,8 +4,10 @@
     "description": "Doradztwo w zakresie doskonałości operacyjnej, optymalizacji procesów i wdrażania AI"
   },
   "home": {
-    "title": "Dyrektor zarządzający / COO / CTO / Interim Manager",
-    "subtitle": "Certyfikowany manager AI & Konsultant",
+    "greeting": "Cześć, jestem",
+    "name": "Mario Pape",
+    "roles": "Dyrektor Zarządzający {'|'} COO {'|'} CTO {'|'} Interim Manager",
+    "subtitle": "Certyfikowany Manager AI & Konsultant",
     "description": "Z 30-letnim międzynarodowym doświadczeniem specjalizującym się w doskonałości operacyjnej, restrukturyzacji, optymalizacji procesów i wdrażaniu AI.",
     "cta": "O mnie",
     "contactInfo": {

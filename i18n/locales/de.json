@@ -4,7 +4,9 @@
     "description": "Unternehmensberatung für operative Exzellenz, Prozessoptimierung und KI-Implementierung"
   },
   "home": {
-    "title": "Managing Director / COO / CTO / Interim Manager",
+    "greeting": "Hallo, ich bin",
+    "name": "Mario Pape",
+    "roles": "Managing Director {'|'} COO {'|'} CTO {'|'} Interim Manager",
     "subtitle": "Zertifizierter KI-Manager & Consultant",
     "description": "Mit 30 Jahren internationaler Erfahrung spezialisiert auf operative Exzellenz, Restrukturierung, Prozessoptimierung und KI-Implementierung.",
     "cta": "Über mich",

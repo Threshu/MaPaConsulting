@@ -10,8 +10,8 @@
 				<UInput
 					v-model="formState.name"
 					:placeholder="t('contact.form.name')"
-					color="white"
 					variant="outline"
+					class="w-full"
 				/>
 			</UFormField>
 
@@ -20,8 +20,8 @@
 					v-model="formState.email"
 					type="email"
 					:placeholder="t('contact.form.email')"
-					color="white"
 					variant="outline"
+					class="w-full"
 				/>
 			</UFormField>
 
@@ -29,8 +29,8 @@
 				<UInput
 					v-model="formState.subject"
 					:placeholder="t('contact.form.subject')"
-					color="white"
 					variant="outline"
+					class="w-full"
 				/>
 			</UFormField>
 
@@ -39,11 +39,10 @@
 					v-model="formState.message"
 					:placeholder="t('contact.form.message')"
 					:rows="5"
-					color="white"
 					variant="outline"
+					class="w-full"
 				/>
 			</UFormField>
-
 			<CtaButton type="submit" icon="i-heroicons-paper-airplane">
 				{{ t("contact.form.send") }}
 			</CtaButton>

@@ -1,5 +1,6 @@
 <template>
 	<div class="app-layout">
+		<LanguageSwitcher />
 		<slot />
 	</div>
 </template>

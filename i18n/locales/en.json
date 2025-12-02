@@ -4,7 +4,9 @@
     "description": "Consulting services for operational excellence, process optimization and AI implementation"
   },
   "home": {
-    "title": "Managing Director / COO / CTO / Interim Manager",
+    "greeting": "Hello, I'm",
+    "name": "Mario Pape",
+    "roles": "Managing Director {'|'} COO {'|'} CTO {'|'} Interim Manager",
     "subtitle": "Certified AI Manager & Consultant",
     "description": "With 30 years of international experience specializing in operational excellence, restructuring, process optimization, and AI implementation.",
     "cta": "About Me",

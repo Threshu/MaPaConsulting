@@ -1,7 +1,9 @@
 <template>
 	<div class="home-content">
 		<div class="home-text">
-			<h1 class="home-title">{{ t("home.title") }}</h1>
+			<p class="home-greeting">{{ t("home.greeting") }}</p>
+			<h1 class="home-name">{{ t("home.name") }}</h1>
+			<p class="home-roles">{{ t("home.roles") }}</p>
 			<p class="home-subtitle">{{ t("home.subtitle") }}</p>
 			<p class="home-description">{{ t("home.description") }}</p>
 			<div>
@@ -30,29 +32,47 @@
 <style scoped>
 	.home-content {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
-		gap: 4rem;
+		grid-template-columns: 1fr auto;
+		gap: 2rem;
 		align-items: center;
 		margin-bottom: 4rem;
+		max-width: 1200px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.home-text {
 		display: flex;
 		flex-direction: column;
-		gap: 1.5rem;
+		gap: 0.75rem;
 	}
 
-	.home-title {
-		font-size: 3.5rem;
-		font-weight: 700;
-		color: var(--color-title);
-		line-height: 1.2;
+	.home-greeting {
+		font-size: 1.25rem;
+		color: var(--color-text);
+		font-weight: 400;
 		margin: 0;
 	}
 
-	.home-subtitle {
+	.home-name {
+		font-size: 4.5rem;
+		font-weight: 700;
+		color: var(--color-title);
+		line-height: 1.1;
+		margin: 0;
+	}
+
+	.home-roles {
 		font-size: 1.5rem;
 		color: var(--color-primary);
+		font-weight: 600;
+		margin: 0;
+		margin-bottom: 0.5rem;
+	}
+
+	.home-subtitle {
+		font-size: 1.25rem;
+		color: var(--color-text);
 		font-weight: 500;
 		margin: 0;
 	}
@@ -62,6 +82,7 @@
 		color: var(--color-text);
 		line-height: 1.8;
 		margin: 0;
+		margin-bottom: 0.5rem;
 	}
 
 	.home-image {
@@ -72,7 +93,7 @@
 
 	.portrait {
 		width: 100%;
-		max-width: 500px;
+		max-width: 400px;
 		height: auto;
 		border-radius: 2rem;
 	}
@@ -83,12 +104,12 @@
 			gap: 2rem;
 		}
 
-		.home-title {
+		.home-name {
 			font-size: 2.5rem;
 		}
 
-		.home-subtitle {
-			font-size: 1.25rem;
+		.home-roles {
+			font-size: 1.125rem;
 		}
 
 		.portrait {

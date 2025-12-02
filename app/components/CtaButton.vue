@@ -7,7 +7,7 @@
 		:leading-icon="icon"
 		style="color: white !important"
 		class="shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 [&_svg]:text-white!"
-		:ui="{ base: 'gap-3', leadingIcon: 'size-7' }"
+		:ui="{ base: 'gap-3', leadingIcon: 'size-10' }"
 		@click="handleClick"
 	>
 		<slot />
