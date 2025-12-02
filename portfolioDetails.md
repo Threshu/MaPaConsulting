@@ -3,7 +3,7 @@ Meine Expertise:
 Erfahrener Managing Director/COO/CTO/Interim Manager/Zertifizierter KI- Manager
 und Consultant mit 30 Jahren internationaler Erfahrung.
 Über mich:
-MAPA Consulting ist auf operative Exzellenz durch Restrukturierung, Prozessoptimierung
+MaPa Consulting ist auf operative Exzellenz durch Restrukturierung, Prozessoptimierung
 Führungsstrategien und KI spezialisiert. Mit umfassender Erfahrung in der Leitung und
 Transformation von Produktionsunternehmen biete ich maßgeschneiderte Lösungen, die
 nachhaltige Ergebnisse liefern.
@@ -46,7 +46,7 @@ My expertise:
 Experienced Managing Director/COO/CTO/Interim Manager/Certified AI Manager
 and Consultant with 30 years of international experience.
 About me:
-MAPA Consulting specializes in operational excellence through restructuring, process
+MaPa Consulting specializes in operational excellence through restructuring, process
 optimization, leadership strategies, and AI. With extensive experience in managing
 and transforming manufacturing companies, I offer customized solutions that deliver
 sustainable results.
