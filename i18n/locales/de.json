@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "MaPa Consulting - Operative Exzellenz",
+    "description": "Unternehmensberatung für operative Exzellenz, Prozessoptimierung und KI-Implementierung"
+  },
+  "home": {
+    "title": "Managing Director / COO / CTO / Interim Manager",
+    "subtitle": "Zertifizierter KI-Manager & Consultant",
+    "description": "Mit 30 Jahren internationaler Erfahrung spezialisiert auf operative Exzellenz, Restrukturierung, Prozessoptimierung und KI-Implementierung.",
+    "cta": "Über mich",
+    "contactInfo": {
+      "phone": "Telefon",
+      "phoneValue": "+49 175 9030149",
+      "email": "E-Mail",
+      "emailValue": "info{'@'}mapa-unternehmensberatung.de",
+      "location": "Standort",
+      "locationValue": "Esslebach, Deutschland",
+      "linkedin": "LinkedIn",
+      "linkedinValue": "Mario Pape"
+    }
+  },
+  "about": {
+    "title": "Meine Expertise",
+    "slides": {
+      "aboutMe": {
+        "title": "Über mich",
+        "intro": "MaPa Consulting ist auf operative Exzellenz durch Restrukturierung, Prozessoptimierung, Führungsstrategien und KI spezialisiert. Mit umfassender Erfahrung in der Leitung und Transformation von Produktionsunternehmen biete ich maßgeschneiderte Lösungen, die nachhaltige Ergebnisse liefern.",
+        "expertise": "Mein Know-how umfasst LEAN-Management, JIT-Produktion, Qualitätsmanagement, Industrie 4.0, ERP- und KI Implementierung, um Unternehmen für zukünftige Herausforderungen wettbewerbsfähig aufzustellen.",
+        "approach": "Ich setze auf eine praxisnahe, umsetzungsorientierte Arbeitsweise, um messbare Verbesserungen zu erzielen, Kosten zu senken und den langfristigen Erfolg meiner Kunden zu sichern."
+      },
+      "services": {
+        "title": "Leistungen",
+        "intro": "Ich biete strategische Beratung auch im Bereich der Künstliche Intelligenz und als Interim Manager eine praxisnahe Umsetzung in den folgenden Bereichen:"
+      },
+      "projects": {
+        "title": "Projekte"
+      }
+    }
+  },
+  "services": {
+    "items": [
+      {
+        "title": "Operative & Produktionsverantwortung"
+      },
+      {
+        "title": "Strategieentwicklung & Umsetzung"
+      },
+      {
+        "title": "Qualitätsmanagement & Prozessoptimierung"
+      },
+      {
+        "title": "Innovation & Produktentwicklung"
+      },
+      {
+        "title": "KI-Einsatzmöglichkeiten & Umsetzung"
+      }
+    ]
+  },
+  "projects": {
+    "items": [
+      {
+        "title": "Internationale Produktionsstandorte"
+      },
+      {
+        "title": "Produktionsverlagerung"
+      },
+      {
+        "title": "LEAN & JIT Optimierung"
+      },
+      {
+        "title": "Industrie 4.0 Digitalisierung"
+      },
+      {
+        "title": "Greenfieldplanung"
+      },
+      {
+        "title": "Qualitätsmanagementsystem"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Kontakt",
+    "button": "Kontakt",
+    "description": "Nehmen Sie Kontakt auf für ein unverbindliches Erstgespräch zu Ihren individuellen Herausforderungen.",
+    "emailTitle": "E-Mail",
+    "phoneTitle": "Telefon",
+    "addressTitle": "Adresse",
+    "writeMe": "Schreiben Sie mir",
+    "callMe": "Rufen Sie mich an",
+    "viewLocation": "Standort anzeigen",
+    "info": {
+      "email": "info{'@'}mapa-unternehmensberatung.de",
+      "phone": "+49 175 9030149",
+      "address": "Lindenstraße 2, 97839 Esslebach"
+    },
+    "form": {
+      "name": "Name",
+      "email": "E-Mail",
+      "subject": "Betreff",
+      "message": "Nachricht",
+      "send": "Nachricht senden",
+      "success": "Nachricht erfolgreich gesendet!",
+      "error": "Fehler beim Senden der Nachricht. Bitte versuchen Sie es erneut.",
+      "validation": {
+        "nameMin": "Name muss mindestens 2 Zeichen lang sein",
+        "emailInvalid": "Ungültige E-Mail-Adresse",
+        "subjectMin": "Betreff muss mindestens 3 Zeichen lang sein",
+        "messageMin": "Nachricht muss mindestens 10 Zeichen lang sein"
+      }
+    }
+  }
+}

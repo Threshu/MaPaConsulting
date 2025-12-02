@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "MaPa Consulting - Doskonałość operacyjna",
+    "description": "Doradztwo w zakresie doskonałości operacyjnej, optymalizacji procesów i wdrażania AI"
+  },
+  "home": {
+    "title": "Dyrektor zarządzający / COO / CTO / Interim Manager",
+    "subtitle": "Certyfikowany manager AI & Konsultant",
+    "description": "Z 30-letnim międzynarodowym doświadczeniem specjalizującym się w doskonałości operacyjnej, restrukturyzacji, optymalizacji procesów i wdrażaniu AI.",
+    "cta": "O mnie",
+    "contactInfo": {
+      "phone": "Telefon",
+      "phoneValue": "+49 175 9030149",
+      "email": "E-mail",
+      "emailValue": "info{'@'}mapa-unternehmensberatung.de",
+      "location": "Lokalizacja",
+      "locationValue": "Esslebach, Niemcy",
+      "linkedin": "LinkedIn",
+      "linkedinValue": "Mario Pape"
+    }
+  },
+  "about": {
+    "title": "Moja Ekspertyza",
+    "slides": {
+      "aboutMe": {
+        "title": "O mnie",
+        "intro": "MaPa Consulting specjalizuje się w doskonałości operacyjnej poprzez restrukturyzację, optymalizację procesów, strategie przywództwa i AI. Z bogatym doświadczeniem w zarządzaniu i transformacji firm produkcyjnych, oferuję niestandardowe rozwiązania, które zapewniają trwałe wyniki.",
+        "expertise": "Moja wiedza obejmuje zarządzanie LEAN, produkcję JIT, zarządzanie jakością, Przemysł 4.0, ERP i wdrażanie AI, aby pozycjonować firmy konkurencyjnie wobec przyszłych wyzwań.",
+        "approach": "Stawiam na praktyczne, zorientowane na wdrożenie podejście, aby osiągać wymierne poprawy, obniżać koszty i zapewniać długoterminowy sukces moich klientów."
+      },
+      "services": {
+        "title": "Usługi",
+        "intro": "Oferuję strategiczne doradztwo w dziedzinie sztucznej inteligencji i jako interim manager praktyczne wdrożenie w następujących obszarach:"
+      },
+      "projects": {
+        "title": "Projekty"
+      }
+    }
+  },
+  "services": {
+    "items": [
+      {
+        "title": "Odpowiedzialność operacyjna i produkcyjna"
+      },
+      {
+        "title": "Rozwój i wdrażanie strategii"
+      },
+      {
+        "title": "Zarządzanie jakością i optymalizacja procesów"
+      },
+      {
+        "title": "Innowacje i rozwój produktów"
+      },
+      {
+        "title": "Zastosowania i wdrażanie AI"
+      }
+    ]
+  },
+  "projects": {
+    "items": [
+      {
+        "title": "Międzynarodowe zakłady produkcyjne"
+      },
+      {
+        "title": "Przeniesienie produkcji"
+      },
+      {
+        "title": "Optymalizacja LEAN i JIT"
+      },
+      {
+        "title": "Digitalizacja Przemysł 4.0"
+      },
+      {
+        "title": "Planowanie Greenfield"
+      },
+      {
+        "title": "System zarządzania jakością"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Kontakt",
+    "button": "Kontakt",
+    "description": "Skontaktuj się, aby umówić niezobowiązującą wstępną rozmowę na temat Twoich indywidualnych wyzwań.",
+    "emailTitle": "E-mail",
+    "phoneTitle": "Telefon",
+    "addressTitle": "Adres",
+    "writeMe": "Napisz do mnie",
+    "callMe": "Zadzwoń do mnie",
+    "viewLocation": "Zobacz lokalizację",
+    "info": {
+      "email": "info{'@'}mapa-unternehmensberatung.de",
+      "phone": "+49 175 9030149",
+      "address": "Lindenstraße 2, 97839 Esslebach"
+    },
+    "form": {
+      "name": "Imię i nazwisko",
+      "email": "E-mail",
+      "subject": "Temat",
+      "message": "Wiadomość",
+      "send": "Wyślij wiadomość",
+      "success": "Wiadomość wysłana pomyślnie!",
+      "error": "Błąd podczas wysyłania wiadomości. Spróbuj ponownie.",
+      "validation": {
+        "nameMin": "Imię musi mieć co najmniej 2 znaki",
+        "emailInvalid": "Nieprawidłowy adres e-mail",
+        "subjectMin": "Temat musi mieć co najmniej 3 znaki",
+        "messageMin": "Wiadomość musi mieć co najmniej 10 znaków"
+      }
+    }
+  }
+}

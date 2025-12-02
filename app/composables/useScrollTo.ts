@@ -1,0 +1,17 @@
+export const useScrollTo=() => {
+  const scrollToElement=(elementId: string) => {
+    const element=document.getElementById(elementId);
+    if(element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const scrollToAbout=() => scrollToElement("about");
+  const scrollToContact=() => scrollToElement("contact");
+
+  return {
+    scrollToElement,
+    scrollToAbout,
+    scrollToContact
+  };
+};

@@ -1,0 +1,43 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/*=============== TAILWIND BASE ===============*/
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+/*=============== CSS VARIABLES ===============*/
+:root {
+    /* Brand Colors - using Tailwind primary */
+    --color-primary: #1a4b84;
+    
+    /* Nuxt UI Color Override */
+    --ui-primary: oklch(from #1a4b84 l c h);
+    
+    /* Typography */
+    --font-family: 'Poppins', sans-serif;
+    
+    /* Neutral Colors */
+    --color-title: #2b2b2b;
+    --color-text: #4a4a4a;
+    --color-body-bg: #f9f9f9;
+    --color-section-bg: #ffffff;
+    --color-box-bg: #ffffff;
+    --color-border: #e5e5e5;
+}
+
+/*=============== BASE STYLES ===============*/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--color-text);
+    background-color: var(--color-body-bg);
+}
+
+/*=============== FOCUS STATES ===============*/
+*:focus-visible {
+    outline: 2px solid theme('colors.primary.DEFAULT');
+    outline-offset: 2px;
+}

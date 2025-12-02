@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "MaPa Consulting - Operational Excellence",
+    "description": "Consulting services for operational excellence, process optimization and AI implementation"
+  },
+  "home": {
+    "title": "Managing Director / COO / CTO / Interim Manager",
+    "subtitle": "Certified AI Manager & Consultant",
+    "description": "With 30 years of international experience specializing in operational excellence, restructuring, process optimization, and AI implementation.",
+    "cta": "About Me",
+    "contactInfo": {
+      "phone": "Phone",
+      "phoneValue": "+49 175 9030149",
+      "email": "Email",
+      "emailValue": "info{'@'}mapa-unternehmensberatung.de",
+      "location": "Location",
+      "locationValue": "Esslebach, Germany",
+      "linkedin": "LinkedIn",
+      "linkedinValue": "Mario Pape"
+    }
+  },
+  "about": {
+    "title": "My Expertise",
+    "slides": {
+      "aboutMe": {
+        "title": "About Me",
+        "intro": "MaPa Consulting specializes in operational excellence through restructuring, process optimization, leadership strategies, and AI. With extensive experience in managing and transforming manufacturing companies, I offer customized solutions that deliver sustainable results.",
+        "expertise": "My expertise includes LEAN management, JIT production, quality management, Industry 4.0, ERP, and AI implementation to position companies competitively for future challenges.",
+        "approach": "I rely on a practical, implementation-oriented approach to achieve measurable improvements, reduce costs, and ensure the long-term success of my clients."
+      },
+      "services": {
+        "title": "Services",
+        "intro": "I offer strategic consulting in the field of artificial intelligence and, as an interim manager, practical implementation in the following areas:"
+      },
+      "projects": {
+        "title": "Projects"
+      }
+    }
+  },
+  "services": {
+    "items": [
+      {
+        "title": "Operational & Production Responsibility"
+      },
+      {
+        "title": "Strategy Development & Implementation"
+      },
+      {
+        "title": "Quality Management & Process Optimization"
+      },
+      {
+        "title": "Innovation & Product Development"
+      },
+      {
+        "title": "AI Applications & Implementation"
+      }
+    ]
+  },
+  "projects": {
+    "items": [
+      {
+        "title": "International Production Sites"
+      },
+      {
+        "title": "Production Relocation"
+      },
+      {
+        "title": "LEAN & JIT Optimization"
+      },
+      {
+        "title": "Industry 4.0 Digitalization"
+      },
+      {
+        "title": "Greenfield Planning"
+      },
+      {
+        "title": "Quality Management System"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "button": "Contact",
+    "description": "Get in touch to schedule a non-binding initial consultation about your individual challenges.",
+    "emailTitle": "Email",
+    "phoneTitle": "Phone",
+    "addressTitle": "Address",
+    "writeMe": "Write to me",
+    "callMe": "Call me",
+    "viewLocation": "View location",
+    "info": {
+      "email": "info{'@'}mapa-unternehmensberatung.de",
+      "phone": "+49 175 9030149",
+      "address": "Lindenstraße 2, 97839 Esslebach"
+    },
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send message",
+      "success": "Message sent successfully!",
+      "error": "Error sending message. Please try again.",
+      "validation": {
+        "nameMin": "Name must be at least 2 characters",
+        "emailInvalid": "Invalid email address",
+        "subjectMin": "Subject must be at least 3 characters",
+        "messageMin": "Message must be at least 10 characters"
+      }
+    }
+  }
+}
