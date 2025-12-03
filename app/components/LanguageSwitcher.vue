@@ -1,12 +1,10 @@
 <template>
-	<div class="language-switcher">
+	<div class="fixed top-4 right-4 z-1000">
 		<UDropdownMenu
 			:items="languageItems"
 			size="lg"
 			:modal="false"
-			:content="{
-				side: 'left',
-			}"
+			:content="{ side: 'left' }"
 			:ui="{
 				content: 'w-52 bg-white/95 backdrop-blur-sm',
 				item: 'hover:bg-primary/10 p-3 text-base flex items-center',
@@ -19,7 +17,6 @@
 				color="neutral"
 				variant="ghost"
 				size="xl"
-				class="language-button"
 				:ui="{
 					base: 'bg-transparent hover:bg-white/10 active:bg-white/10',
 					leadingIcon: 'size-10 rounded-full ring-2 ring-[var(--color-title)]',
@@ -53,12 +50,3 @@
 		}))
 	);
 </script>
-
-<style scoped>
-	.language-switcher {
-		position: fixed;
-		top: 1rem;
-		right: 1rem;
-		z-index: 1000;
-	}
-</style>

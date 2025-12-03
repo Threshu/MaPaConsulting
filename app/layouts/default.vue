@@ -1,12 +1,6 @@
 <template>
-	<div class="app-layout">
+	<div class="min-h-screen">
 		<LanguageSwitcher />
 		<slot />
 	</div>
 </template>
-
-<style scoped>
-	.app-layout {
-		min-height: 100vh;
-	}
-</style>

@@ -1,3 +1,11 @@
+<template>
+	<div>
+		<HomeSection />
+		<AboutSection />
+		<ContactSection />
+	</div>
+</template>
+
 <script setup lang="ts">
 	const { t } = useI18n();
 
@@ -11,27 +19,3 @@
 		],
 	});
 </script>
-
-<template>
-	<div>
-		<section id="home" class="home-section">
-			<UContainer>
-				<HomeHero />
-				<HomeContactCards />
-			</UContainer>
-		</section>
-
-		<AboutSection />
-
-		<ContactSection />
-	</div>
-</template>
-
-<style>
-	.home-section {
-		min-height: 100vh;
-		background-color: var(--color-body-bg);
-		display: flex;
-		align-items: center;
-	}
-</style>

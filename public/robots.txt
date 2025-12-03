@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# Sitemap location
-Sitemap: https://mapaconsulting.de/sitemap.xml
+Sitemap: /sitemap.xml

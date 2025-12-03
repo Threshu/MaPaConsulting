@@ -1,23 +1,34 @@
-# Nuxt Minimal Starter
+# MaPa Consulting Website
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Professional consulting website built with Nuxt 4, featuring operational excellence services, AI implementation, and interim management solutions.
+
+## Features
+
+- 🌍 Multi-language support (German, English, Polish)
+- 🎨 Modern UI with Nuxt UI components
+- 📱 Fully responsive design
+- ♿ Accessibility-focused
+- 🚀 Optimized performance
+- 🎯 SEO-ready with meta tags
+- 📧 Contact form with validation
+- 🎠 Interactive carousel for services showcase
+
+## Tech Stack
+
+- **Framework**: Nuxt 4.2.1
+- **UI Library**: Nuxt UI 4.2.1
+- **Styling**: Tailwind CSS 4
+- **Icons**: Heroicons, Circle Flags
+- **i18n**: @nuxtjs/i18n 10.2.1
+- **Validation**: Valibot
+- **TypeScript**: Full type safety
 
 ## Setup
 
-Make sure to install dependencies:
+Install dependencies:
 
 ```bash
-# npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
 ## Development Server
@@ -25,17 +36,7 @@ bun install
 Start the development server on `http://localhost:3000`:
 
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
 ## Production
@@ -43,33 +44,45 @@ bun run dev
 Build the application for production:
 
 ```bash
-# npm
 npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
 ```
 
-Locally preview production build:
+Preview production build locally:
 
 ```bash
-# npm
 npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Project Structure
+
+```
+app/
+├── assets/css/          # Global styles and CSS variables
+├── components/          # Vue components
+│   ├── about/          # About section components
+│   ├── contact/        # Contact section components
+│   └── home/           # Home section components
+├── composables/        # Reusable composition functions
+├── layouts/            # Application layouts
+└── pages/              # Route pages
+i18n/locales/           # Translation files (de, en, pl)
+public/                 # Static assets
+```
+
+## Configuration
+
+- `nuxt.config.ts` - Nuxt configuration
+- `app.config.ts` - App-specific configuration
+- `tailwind.config.ts` - Tailwind CSS configuration
+- `eslint.config.mjs` - ESLint rules
+
+## Color Scheme
+
+- Primary: `#1a4b84` (Professional blue)
+- Background: `#f0f0f0`
+- Text: `#4a4a4a`
+- Title: `#2b2b2b`
+
+## License
+
+© 2025 MaPa Consulting. All rights reserved.
