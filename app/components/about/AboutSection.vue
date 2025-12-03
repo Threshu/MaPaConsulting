@@ -9,8 +9,10 @@
 				:ui="{
 					container: 'rounded-2xl',
 					item: 'basis-full px-2',
-					prev: 'start-4 top-1/2 -translate-y-1/2',
-					next: 'end-4 top-1/2 -translate-y-1/2',
+					prev: 'start-4 top-1/2 -translate-y-1/2 mobile-hide',
+					next: 'end-4 top-1/2 -translate-y-1/2 mobile-hide',
+					dots: 'mt-4 gap-2',
+					dot: 'bg-gray-300 data-[active=true]:bg-primary w-2.5 h-2.5',
 				}"
 				:prev="{
 					color: 'primary',
@@ -27,6 +29,7 @@
 					class: 'text-white shadow-lg',
 				}"
 				arrows
+				indicators
 				class="carousel-wrapper"
 			>
 				<component :is="item.component" />
@@ -90,6 +93,11 @@
 	@media (max-width: 768px) {
 		.about-title {
 			font-size: 2.25rem;
+			margin-top: 2rem;
+		}
+
+		:deep(.mobile-hide) {
+			display: none !important;
 		}
 	}
 </style>

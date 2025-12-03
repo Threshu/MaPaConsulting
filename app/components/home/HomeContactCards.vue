@@ -133,6 +133,24 @@
 	@media (max-width: 480px) {
 		.contact-grid {
 			grid-template-columns: 1fr;
+			gap: 0.75rem;
+			margin-top: 1rem;
+		}
+
+		.contact-content {
+			gap: 0.75rem;
+		}
+
+		.contact-icon {
+			font-size: 2.25rem;
+		}
+
+		.contact-title {
+			font-size: 1rem;
+		}
+
+		.contact-value {
+			font-size: 1rem;
 		}
 	}
 </style>

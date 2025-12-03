@@ -6,7 +6,7 @@
 			<p class="home-roles">{{ t("home.roles") }}</p>
 			<p class="home-subtitle">{{ t("home.subtitle") }}</p>
 			<p class="home-description">{{ t("home.description") }}</p>
-			<div>
+			<div class="desktop-cta">
 				<CtaButton icon="i-heroicons-user-circle" @click="scrollToAbout">
 					{{ t("home.cta") }}
 				</CtaButton>
@@ -99,10 +99,15 @@
 		border-radius: 2rem;
 	}
 
+	.desktop-cta {
+		display: block;
+	}
+
 	@media (max-width: 768px) {
 		.home-content {
 			grid-template-columns: 1fr;
 			gap: 2rem;
+			margin-bottom: 2rem;
 		}
 
 		.home-name {
@@ -115,6 +120,10 @@
 
 		.portrait {
 			max-width: 300px;
+		}
+
+		.desktop-cta {
+			display: none;
 		}
 	}
 </style>
