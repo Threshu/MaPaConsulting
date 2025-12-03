@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "MaPa Consulting - Doskonałość operacyjna",
+    "title": "MaPa Consulting",
     "description": "Doradztwo w zakresie doskonałości operacyjnej, optymalizacji procesów i wdrażania AI"
   },
   "home": {
@@ -83,7 +83,7 @@
   "contact": {
     "title": "Kontakt",
     "button": "Kontakt",
-    "description": "Skontaktuj się, aby umówić niezobowiązującą wstępną rozmowę na temat Twoich indywidualnych wyzwań.",
+    "description": "Skontaktuj się, aby umówić wstępną rozmowę na temat Twoich wyzwań.",
     "emailTitle": "E-mail",
     "phoneTitle": "Telefon",
     "addressTitle": "Adres",

@@ -7,31 +7,29 @@
 				v-slot="{ item }"
 				:items="slides"
 				:ui="{
-					root: 'relative',
-					item: 'basis-full',
 					container: 'rounded-2xl',
-					arrows: {
-						wrapper:
-							'absolute inset-x-0 flex items-center justify-between px-4 pointer-events-none z-10',
-						base: 'pointer-events-auto rounded-full shadow-lg hover:shadow-xl transition-all cursor-pointer disabled:opacity-0 disabled:cursor-not-allowed',
-					},
+					item: 'basis-full px-2',
+					prev: 'start-4 top-1/2 -translate-y-1/2',
+					next: 'end-4 top-1/2 -translate-y-1/2',
 				}"
 				:prev="{
 					color: 'primary',
 					variant: 'solid',
 					size: 'xl',
-					ui: { base: 'text-white', leadingIcon: 'size-7' },
+					icon: 'i-heroicons-chevron-left',
+					class: 'text-white shadow-lg',
 				}"
 				:next="{
 					color: 'primary',
 					variant: 'solid',
 					size: 'xl',
-					ui: { base: 'text-white', trailingIcon: 'size-7' },
+					icon: 'i-heroicons-chevron-right',
+					class: 'text-white shadow-lg',
 				}"
 				arrows
 				class="carousel-wrapper"
 			>
-				<AboutCarouselSlide :slide="item" />
+				<component :is="item.component" />
 			</UCarousel>
 
 			<div class="contact-button-wrapper">
@@ -44,94 +42,29 @@
 </template>
 
 <script setup lang="ts">
+	import type { Component } from "vue";
+	import AboutMeSlide from "./slides/AboutMeSlide.vue";
+	import ServicesSlide from "./slides/ServicesSlide.vue";
+	import ProjectsSlide from "./slides/ProjectsSlide.vue";
+
 	const { t } = useI18n();
 	const { scrollToContact } = useScrollTo();
 
 	interface CarouselSlide {
-		icon: string;
-		title: string;
-		content: string;
+		component: Component;
 	}
 
-	const slides = computed<CarouselSlide[]>(() => [
-		{
-			icon: "i-heroicons-user-circle",
-			title: t("about.slides.aboutMe.title"),
-			content: `
-			<p class="slide-text">${t("about.slides.aboutMe.intro")}</p>
-			<p class="slide-text">${t("about.slides.aboutMe.expertise")}</p>
-			<p class="slide-text">${t("about.slides.aboutMe.approach")}</p>
-		`,
-		},
-		{
-			icon: "i-heroicons-briefcase",
-			title: t("about.slides.services.title"),
-			content: `
-			<p class="slide-text">${t("about.slides.services.intro")}</p>
-			<div class="services-grid">
-				<div class="service-card">
-					<div class="service-icon">🏭</div>
-					<h4 class="service-title">${t("services.items.0.title")}</h4>
-				</div>
-				<div class="service-card">
-					<div class="service-icon">📊</div>
-					<h4 class="service-title">${t("services.items.1.title")}</h4>
-				</div>
-				<div class="service-card">
-					<div class="service-icon">⚙️</div>
-					<h4 class="service-title">${t("services.items.2.title")}</h4>
-				</div>
-				<div class="service-card">
-					<div class="service-icon">💡</div>
-					<h4 class="service-title">${t("services.items.3.title")}</h4>
-				</div>
-				<div class="service-card">
-					<div class="service-icon">🤖</div>
-					<h4 class="service-title">${t("services.items.4.title")}</h4>
-				</div>
-			</div>
-		`,
-		},
-		{
-			icon: "i-heroicons-light-bulb",
-			title: t("about.slides.projects.title"),
-			content: `
-			<div class="projects-list">
-				<div class="project-item">
-					<div class="project-icon">🏗️</div>
-					<p class="project-text">${t("projects.items.0.title")}</p>
-				</div>
-				<div class="project-item">
-					<div class="project-icon">✈️</div>
-					<p class="project-text">${t("projects.items.1.title")}</p>
-				</div>
-				<div class="project-item">
-					<div class="project-icon">📈</div>
-					<p class="project-text">${t("projects.items.2.title")}</p>
-				</div>
-				<div class="project-item">
-					<div class="project-icon">🔧</div>
-					<p class="project-text">${t("projects.items.3.title")}</p>
-				</div>
-				<div class="project-item">
-					<div class="project-icon">🌱</div>
-					<p class="project-text">${t("projects.items.4.title")}</p>
-				</div>
-				<div class="project-item">
-					<div class="project-icon">🏆</div>
-					<p class="project-text">${t("projects.items.5.title")}</p>
-				</div>
-			</div>
-		`,
-		},
-	]);
+	const slides: CarouselSlide[] = [
+		{ component: AboutMeSlide },
+		{ component: ServicesSlide },
+		{ component: ProjectsSlide },
+	];
 </script>
 
 <style scoped>
 	.about-section {
 		min-height: 100vh;
 		background-color: var(--color-section-bg);
-		padding: 4rem 0;
 		display: flex;
 		align-items: center;
 	}

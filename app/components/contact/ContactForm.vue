@@ -80,11 +80,12 @@
 		font-size: 1.0625rem;
 		background-color: white;
 		border: 1px solid var(--color-border);
+		color: var(--color-text);
 	}
 
-	@media (max-width: 768px) {
-		.contact-form-wrapper {
-			padding: 1.5rem;
-		}
+	.contact-form :deep(.text-error) {
+		color: rgb(239, 68, 68);
+		font-size: 0.875rem;
+		margin-top: 0.25rem;
 	}
 </style>

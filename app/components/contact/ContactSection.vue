@@ -18,8 +18,10 @@
 
 <style scoped>
 	.contact-section {
-		min-height: auto;
+		min-height: 100vh;
 		background-color: var(--color-section-bg);
+		display: flex;
+		align-items: center;
 	}
 
 	.contact-title {

@@ -35,7 +35,8 @@
 		grid-template-columns: 1fr auto;
 		gap: 2rem;
 		align-items: center;
-		margin-bottom: 4rem;
+		margin-top: 5rem;
+		margin-bottom: 8rem;
 		max-width: 1200px;
 		margin-left: auto;
 		margin-right: auto;
@@ -113,7 +114,7 @@
 		}
 
 		.portrait {
-			max-width: 350px;
+			max-width: 300px;
 		}
 	}
 </style>

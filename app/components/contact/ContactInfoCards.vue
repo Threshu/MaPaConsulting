@@ -2,42 +2,18 @@
 	<div class="contact-info-cards">
 		<p class="contact-description">{{ t("contact.description") }}</p>
 
-		<UCard class="contact-info-card">
+		<UCard
+			v-for="card in contactCards"
+			:key="card.titleKey"
+			class="contact-info-card"
+		>
 			<div class="contact-info-content">
-				<h3 class="contact-info-title">{{ t("contact.emailTitle") }}</h3>
-				<p class="contact-info-data">{{ t("contact.info.email") }}</p>
-				<CtaButton
-					:to="`mailto:${t('contact.info.email')}`"
-					icon="i-heroicons-envelope"
-				>
-					{{ t("contact.writeMe") }}
-				</CtaButton>
-			</div>
-		</UCard>
-
-		<UCard class="contact-info-card">
-			<div class="contact-info-content">
-				<h3 class="contact-info-title">{{ t("contact.phoneTitle") }}</h3>
-				<p class="contact-info-data">{{ t("contact.info.phone") }}</p>
-				<CtaButton
-					:to="`tel:${t('contact.info.phone')}`"
-					icon="i-heroicons-phone"
-				>
-					{{ t("contact.callMe") }}
-				</CtaButton>
-			</div>
-		</UCard>
-
-		<UCard class="contact-info-card">
-			<div class="contact-info-content">
-				<h3 class="contact-info-title">{{ t("contact.addressTitle") }}</h3>
-				<p class="contact-info-data">{{ t("contact.info.address") }}</p>
-				<CtaButton
-					to="https://maps.google.com/?q=Lindenstraße+2,+97839+Esslebach"
-					target="_blank"
-					icon="i-heroicons-map-pin"
-				>
-					{{ t("contact.viewLocation") }}
+				<div class="contact-info-text">
+					<h3 class="contact-info-title">{{ t(card.titleKey) }}</h3>
+					<p class="contact-info-data">{{ t(card.dataKey) }}</p>
+				</div>
+				<CtaButton :to="card.link" :target="card.target" :icon="card.icon">
+					{{ t(card.buttonKey) }}
 				</CtaButton>
 			</div>
 		</UCard>
@@ -46,6 +22,40 @@
 
 <script setup lang="ts">
 	const { t } = useI18n();
+
+	interface ContactCard {
+		titleKey: string;
+		dataKey: string;
+		buttonKey: string;
+		link: string;
+		icon: string;
+		target?: string;
+	}
+
+	const contactCards: ContactCard[] = [
+		{
+			titleKey: "contact.emailTitle",
+			dataKey: "contact.info.email",
+			buttonKey: "contact.writeMe",
+			link: `mailto:${t("contact.info.email")}`,
+			icon: "i-heroicons-envelope",
+		},
+		{
+			titleKey: "contact.phoneTitle",
+			dataKey: "contact.info.phone",
+			buttonKey: "contact.callMe",
+			link: `tel:${t("contact.info.phone")}`,
+			icon: "i-heroicons-phone",
+		},
+		{
+			titleKey: "contact.addressTitle",
+			dataKey: "contact.info.address",
+			buttonKey: "contact.viewLocation",
+			link: "https://maps.google.com/?q=Lindenstraße+2,+97839+Esslebach",
+			icon: "i-heroicons-map-pin",
+			target: "_blank",
+		},
+	];
 </script>
 
 <style scoped>
@@ -65,7 +75,6 @@
 	.contact-info-card {
 		background-color: var(--color-body-bg);
 		border-radius: 0.75rem;
-		padding: 1.25rem;
 		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 		transition: transform 0.2s ease, box-shadow 0.2s ease;
 	}
@@ -77,21 +86,26 @@
 
 	.contact-info-content {
 		display: flex;
-		flex-direction: column;
-		gap: 0.5rem;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		gap: 2rem;
+	}
+
+	.contact-info-text {
+		flex: 1;
 	}
 
 	.contact-info-title {
 		font-size: 1.375rem;
 		font-weight: 600;
 		color: var(--color-title);
-		margin: 0;
+		margin: 0 0 0.25rem 0;
 	}
 
 	.contact-info-data {
 		font-size: 1.0625rem;
 		color: var(--color-text);
 		margin: 0;
-		margin-bottom: 0.75rem;
 	}
 </style>

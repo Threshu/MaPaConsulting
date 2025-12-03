@@ -78,7 +78,6 @@
 	.contact-grid {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(250px, max-content));
-		gap: 1.5rem;
 		margin-top: 2rem;
 		justify-content: space-between;
 	}
@@ -95,7 +94,7 @@
 	}
 
 	.contact-icon {
-		font-size: 4rem;
+		font-size: 3rem;
 		color: var(--color-primary);
 		flex-shrink: 0;
 	}
@@ -107,14 +106,14 @@
 	}
 
 	.contact-title {
-		font-size: 1.5rem;
+		font-size: 1.25rem;
 		color: var(--color-primary);
 		margin: 0;
 		font-weight: 500;
 	}
 
 	.contact-value {
-		font-size: 1.5rem;
+		font-size: 1.25rem;
 		color: var(--color-title);
 		margin: 0;
 		font-weight: 600;
