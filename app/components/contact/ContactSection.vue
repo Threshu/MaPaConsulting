@@ -36,7 +36,7 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		gap: 3rem;
-		max-width: 1200px;
+		max-width: 1300px;
 		margin: 0 auto;
 	}
 

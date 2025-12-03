@@ -6,12 +6,20 @@ export const useScrollTo=() => {
     }
   };
 
+  const scrollToTop=() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
   const scrollToAbout=() => scrollToElement("about");
   const scrollToContact=() => scrollToElement("contact");
 
   return {
     scrollToElement,
     scrollToAbout,
-    scrollToContact
+    scrollToContact,
+    scrollToTop
   };
 };
