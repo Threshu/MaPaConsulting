@@ -102,6 +102,7 @@
       "message": "Nachricht",
       "send": "Nachricht senden",
       "success": "Nachricht erfolgreich gesendet!",
+      "error": "Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut.",
       "validation": {
         "nameMin": "Name muss mindestens 2 Zeichen lang sein",
         "emailInvalid": "Ungültige E-Mail-Adresse",

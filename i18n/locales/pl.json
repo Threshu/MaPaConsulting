@@ -102,6 +102,7 @@
       "message": "Wiadomość",
       "send": "Wyślij wiadomość",
       "success": "Wiadomość wysłana pomyślnie!",
+      "error": "Nie udało się wysłać wiadomości. Spróbuj ponownie.",
       "validation": {
         "nameMin": "Imię musi mieć co najmniej 2 znaki",
         "emailInvalid": "Nieprawidłowy adres e-mail",

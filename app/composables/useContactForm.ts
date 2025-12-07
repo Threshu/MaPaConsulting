@@ -22,16 +22,45 @@ export const useContactForm=() => {
   });
 
   const onSubmit=async (_event: FormSubmitEvent<FormSchema>) => {
-    toast.add({
-      title: t('contact.form.success'),
-      color: 'neutral',
-      icon: 'i-heroicons-check-circle'
-    });
+    try {
+      const FORMSPREE_ENDPOINT='https://formspree.io/f/YOUR_FORM_ID';
 
-    formState.name='';
-    formState.email='';
-    formState.subject='';
-    formState.message='';
+      const response=await fetch(FORMSPREE_ENDPOINT, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          name: formState.name,
+          email: formState.email,
+          subject: formState.subject,
+          message: formState.message,
+          _replyto: formState.email,
+          _subject: formState.subject
+        })
+      });
+
+      if(!response.ok) {
+        throw new Error('Failed to send message');
+      }
+
+      toast.add({
+        title: t('contact.form.success'),
+        color: 'neutral',
+        icon: 'i-heroicons-check-circle'
+      });
+
+      formState.name='';
+      formState.email='';
+      formState.subject='';
+      formState.message='';
+    } catch(error) {
+      toast.add({
+        title: t('contact.form.error'),
+        color: 'neutral',
+        icon: 'i-heroicons-x-circle'
+      });
+    }
   };
 
   return {
