@@ -40,7 +40,12 @@
 		margin: 0 auto;
 	}
 
-	@media (max-width: 768px) {
+	@media (max-width: 968px) {
+		.contact-section {
+			min-height: auto;
+			padding: 2rem 0;
+		}
+
 		.contact-title {
 			font-size: 2rem;
 		}

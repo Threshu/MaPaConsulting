@@ -78,7 +78,7 @@
 	.contact-grid {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(250px, max-content));
-		margin-top: 2rem;
+		margin-top: 1rem;
 		justify-content: space-between;
 	}
 
@@ -127,6 +127,27 @@
 	@media (max-width: 968px) {
 		.contact-grid {
 			grid-template-columns: repeat(2, 1fr);
+			gap: 1rem;
+		}
+
+		.contact-card :deep(.u-card-body) {
+			padding: 1rem !important;
+		}
+
+		.contact-content {
+			gap: 0.75rem;
+		}
+
+		.contact-icon {
+			font-size: 2.5rem;
+		}
+
+		.contact-title {
+			font-size: 1.125rem;
+		}
+
+		.contact-value {
+			font-size: 1.125rem;
 		}
 	}
 

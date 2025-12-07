@@ -6,30 +6,28 @@
 			<UCarousel
 				v-slot="{ item }"
 				:items="slides"
+				auto-height
 				:ui="{
-					container: 'rounded-2xl',
+					container: 'rounded-2xl transition-[height]',
 					item: 'basis-full px-2',
-					prev: 'start-4 top-1/2 -translate-y-1/2 mobile-hide',
-					next: 'end-4 top-1/2 -translate-y-1/2 mobile-hide',
-					dots: 'mt-4 gap-2',
-					dot: 'bg-gray-300 data-[active=true]:bg-primary w-2.5 h-2.5',
+					prev: 'start-4 top-1/2 -translate-y-1/2',
+					next: 'end-4 top-1/2 -translate-y-1/2',
 				}"
 				:prev="{
 					color: 'primary',
 					variant: 'solid',
 					size: 'xl',
 					icon: 'i-heroicons-chevron-left',
-					class: 'text-white shadow-lg',
+					class: 'text-white shadow-lg carousel-arrow',
 				}"
 				:next="{
 					color: 'primary',
 					variant: 'solid',
 					size: 'xl',
 					icon: 'i-heroicons-chevron-right',
-					class: 'text-white shadow-lg',
+					class: 'text-white shadow-lg carousel-arrow',
 				}"
 				arrows
-				indicators
 				class="carousel-wrapper"
 			>
 				<component :is="item.component" />
@@ -90,14 +88,56 @@
 		margin-top: 3rem;
 	}
 
-	@media (max-width: 768px) {
+	@media (min-width: 969px) {
+		:deep(.carousel-arrow:first-of-type) {
+			left: -1rem !important;
+		}
+
+		:deep(.carousel-arrow:last-of-type) {
+			right: -1rem !important;
+		}
+	}
+
+	@media (max-width: 968px) {
+		.about-section {
+			min-height: auto;
+			padding: 2rem 0;
+		}
+
 		.about-title {
 			font-size: 2.25rem;
 			margin-top: 2rem;
+			margin-bottom: 1.5rem;
 		}
 
-		:deep(.mobile-hide) {
-			display: none !important;
+		.carousel-wrapper {
+			margin-bottom: 0;
+		}
+
+		.contact-button-wrapper {
+			display: none;
+		}
+
+		:deep(.carousel-arrow:first-of-type) {
+			left: -0.5rem !important;
+		}
+
+		:deep(.carousel-arrow:last-of-type) {
+			right: 0.5rem !important;
+		}
+	}
+
+	@media (max-width: 480px) {
+		:deep(.carousel-arrow) {
+			width: 2rem !important;
+			height: 2rem !important;
+			left: -0.25rem !important;
+			padding: 0.25rem !important;
+		}
+
+		:deep(.carousel-arrow:last-of-type) {
+			left: auto !important;
+			right: -0.25rem !important;
 		}
 	}
 </style>

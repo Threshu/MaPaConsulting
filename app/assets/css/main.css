@@ -49,3 +49,17 @@ body {
     outline: 2px solid theme('colors.primary.DEFAULT');
     outline-offset: 2px;
 }
+
+/*=============== TOAST CUSTOM STYLES ===============*/
+[data-slot="base"][role="alert"] {
+    background-color: #1a4b84 !important;
+}
+
+[data-slot="base"][role="alert"] [data-slot="title"],
+[data-slot="base"][role="alert"] [data-slot="icon"] {
+    color: white !important;
+}
+
+[data-slot="base"][role="alert"] [data-slot="indicator"] {
+    background-color: white !important;
+}

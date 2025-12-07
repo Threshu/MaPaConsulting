@@ -108,4 +108,20 @@
 		color: var(--color-text);
 		margin: 0;
 	}
+
+	@media (max-width: 768px) {
+		.contact-info-content {
+			flex-direction: column;
+			align-items: stretch;
+			gap: 1rem;
+		}
+
+		.contact-info-title {
+			font-size: 1.125rem;
+		}
+
+		.contact-info-data {
+			font-size: 0.9375rem;
+		}
+	}
 </style>

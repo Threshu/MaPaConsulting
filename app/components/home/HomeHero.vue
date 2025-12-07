@@ -35,8 +35,8 @@
 		grid-template-columns: 1fr auto;
 		gap: 2rem;
 		align-items: center;
-		margin-top: 5rem;
-		margin-bottom: 8rem;
+		margin-top: 3rem;
+		margin-bottom: 3rem;
 		max-width: 1200px;
 		margin-left: auto;
 		margin-right: auto;

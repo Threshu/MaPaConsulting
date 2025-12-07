@@ -24,7 +24,7 @@ export const useContactForm=() => {
   const onSubmit=async (_event: FormSubmitEvent<FormSchema>) => {
     toast.add({
       title: t('contact.form.success'),
-      color: 'primary',
+      color: 'neutral',
       icon: 'i-heroicons-check-circle'
     });
 

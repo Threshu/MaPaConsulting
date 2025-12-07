@@ -1,5 +1,5 @@
 <template>
-	<div class="fixed top-4 right-4 z-1000">
+	<div class="language-switcher">
 		<UDropdownMenu
 			:items="languageItems"
 			size="lg"
@@ -50,3 +50,12 @@
 		}))
 	);
 </script>
+
+<style scoped>
+	.language-switcher {
+		position: absolute;
+		top: 1rem;
+		right: 1rem;
+		z-index: 1000;
+	}
+</style>
