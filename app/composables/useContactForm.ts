@@ -46,7 +46,7 @@ export const useContactForm=() => {
     } catch(error: any) {
       const errorCode=error.data?.code||'UNKNOWN_ERROR';
       const errorMessage=t(`contact.form.errors.${errorCode}`)||t('contact.form.error');
-      
+
       toast.add({
         title: errorMessage,
         color: 'neutral',
