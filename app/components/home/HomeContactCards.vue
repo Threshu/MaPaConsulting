@@ -6,7 +6,7 @@
 			class="contact-card"
 			:ui="{
 				root: 'bg-transparent shadow-none ring-0',
-				body: 'p-6',
+				body: 'p-2',
 			}"
 		>
 			<ULink
@@ -113,10 +113,11 @@
 	}
 
 	.contact-value {
-		font-size: 1.25rem;
+		font-size: 1.125rem;
 		color: var(--color-title);
 		margin: 0;
 		font-weight: 600;
+		word-break: break-word;
 	}
 
 	.contact-card:hover .contact-icon {
