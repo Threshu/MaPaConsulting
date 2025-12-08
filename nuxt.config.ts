@@ -3,6 +3,10 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-12-02',
   devtools: { enabled: true },
 
+  runtimeConfig: {
+    formspreeEndpoint: ''
+  },
+
   devServer: {
     host: '0.0.0.0',
     port: 3000

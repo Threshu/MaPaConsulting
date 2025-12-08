@@ -103,6 +103,12 @@
       "send": "Wyślij wiadomość",
       "success": "Wiadomość wysłana pomyślnie!",
       "error": "Nie udało się wysłać wiadomości. Spróbuj ponownie.",
+      "errors": {
+        "MISSING_FIELDS": "Proszę wypełnić wszystkie pola.",
+        "NOT_CONFIGURED": "Formularz kontaktowy nie jest skonfigurowany. Skontaktuj się z nami bezpośrednio.",
+        "SEND_FAILED": "Nie udało się wysłać wiadomości. Spróbuj później.",
+        "UNKNOWN_ERROR": "Wystąpił nieoczekiwany błąd. Spróbuj ponownie."
+      },
       "validation": {
         "nameMin": "Imię musi mieć co najmniej 2 znaki",
         "emailInvalid": "Nieprawidłowy adres e-mail",

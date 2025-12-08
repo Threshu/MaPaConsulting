@@ -103,6 +103,12 @@
       "send": "Nachricht senden",
       "success": "Nachricht erfolgreich gesendet!",
       "error": "Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut.",
+      "errors": {
+        "MISSING_FIELDS": "Bitte füllen Sie alle Felder aus.",
+        "NOT_CONFIGURED": "Kontaktformular nicht konfiguriert. Bitte kontaktieren Sie uns direkt.",
+        "SEND_FAILED": "Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es später erneut.",
+        "UNKNOWN_ERROR": "Ein unerwarteter Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
+      },
       "validation": {
         "nameMin": "Name muss mindestens 2 Zeichen lang sein",
         "emailInvalid": "Ungültige E-Mail-Adresse",

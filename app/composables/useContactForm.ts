@@ -23,26 +23,15 @@ export const useContactForm=() => {
 
   const onSubmit=async (_event: FormSubmitEvent<FormSchema>) => {
     try {
-      const FORMSPREE_ENDPOINT='https://formspree.io/f/YOUR_FORM_ID';
-
-      const response=await fetch(FORMSPREE_ENDPOINT, {
+      await $fetch('/api/contact', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
+        body: {
           name: formState.name,
           email: formState.email,
           subject: formState.subject,
-          message: formState.message,
-          _replyto: formState.email,
-          _subject: formState.subject
-        })
+          message: formState.message
+        }
       });
-
-      if(!response.ok) {
-        throw new Error('Failed to send message');
-      }
 
       toast.add({
         title: t('contact.form.success'),
@@ -54,9 +43,12 @@ export const useContactForm=() => {
       formState.email='';
       formState.subject='';
       formState.message='';
-    } catch(error) {
+    } catch(error: any) {
+      const errorCode=error.data?.code||'UNKNOWN_ERROR';
+      const errorMessage=t(`contact.form.errors.${errorCode}`)||t('contact.form.error');
+      
       toast.add({
-        title: t('contact.form.error'),
+        title: errorMessage,
         color: 'neutral',
         icon: 'i-heroicons-x-circle'
       });
