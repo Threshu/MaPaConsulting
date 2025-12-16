@@ -48,6 +48,19 @@ export default defineNuxtConfig({
     },
     compilation: {
       strictMessage: false
+    },
+    customRoutes: 'config',
+    pages: {
+      'impressum': {
+        de: '/impressum',
+        en: '/imprint',
+        pl: '/informacje-prawne'
+      },
+      'datenschutz': {
+        de: '/datenschutz',
+        en: '/privacy-policy',
+        pl: '/polityka-prywatnosci'
+      }
     }
   },
 

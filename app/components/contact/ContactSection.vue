@@ -10,11 +10,11 @@
 			</div>
 
 			<footer class="legal-footer">
-				<NuxtLink :to="localePath('/impressum')" class="footer-link">
+				<NuxtLink :to="localePath('impressum')" class="footer-link">
 					{{ t("footer.impressum") }}
 				</NuxtLink>
 				<span class="footer-separator">|</span>
-				<NuxtLink :to="localePath('/datenschutz')" class="footer-link">
+				<NuxtLink :to="localePath('datenschutz')" class="footer-link">
 					{{ t("footer.privacy") }}
 				</NuxtLink>
 			</footer>
