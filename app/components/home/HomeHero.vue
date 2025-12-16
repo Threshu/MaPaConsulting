@@ -17,10 +17,11 @@
 			<NuxtImg
 				src="/assets/img/portrait_tranparent.png"
 				alt="Mario Pape"
-				width="800"
+				width="726"
+				height="1090"
 				class="portrait"
-				loading="lazy"
-				sizes="sm:100vw md:50vw lg:800px"
+				fetchpriority="high"
+				sizes="sm:100vw md:50vw lg:726px"
 			/>
 		</div>
 	</div>
