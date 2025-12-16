@@ -1,8 +1,8 @@
 <template>
 	<div>
 		<HomeSection />
-		<AboutSection />
-		<ContactSection />
+		<LazyAboutSection hydrate-on-visible />
+		<LazyContactSection hydrate-on-visible />
 	</div>
 </template>
 
