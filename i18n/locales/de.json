@@ -126,6 +126,18 @@
   "common": {
     "backToHome": "Zurück zur Startseite"
   },
+  "error": {
+    "404": {
+      "title": "Seite nicht gefunden",
+      "description": "Die von Ihnen gesuchte Seite existiert leider nicht oder wurde verschoben.",
+      "button": "Zurück zur Startseite"
+    },
+    "general": {
+      "title": "Ein Fehler ist aufgetreten",
+      "description": "Entschuldigung, etwas ist schiefgelaufen. Bitte versuchen Sie es später erneut.",
+      "button": "Zurück zur Startseite"
+    }
+  },
   "footer": {
     "impressum": "Impressum",
     "privacy": "Datenschutz"

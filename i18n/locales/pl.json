@@ -126,6 +126,18 @@
   "common": {
     "backToHome": "Powrót do strony głównej"
   },
+  "error": {
+    "404": {
+      "title": "Strona nie znaleziona",
+      "description": "Strona, której szukasz, nie istnieje lub została przeniesiona.",
+      "button": "Powrót do strony głównej"
+    },
+    "general": {
+      "title": "Wystąpił błąd",
+      "description": "Przepraszamy, coś poszło nie tak. Spróbuj ponownie później.",
+      "button": "Powrót do strony głównej"
+    }
+  },
   "footer": {
     "impressum": "Informacje prawne",
     "privacy": "Prywatność"

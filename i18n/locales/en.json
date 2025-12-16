@@ -126,6 +126,18 @@
   "common": {
     "backToHome": "Back to Home"
   },
+  "error": {
+    "404": {
+      "title": "Page Not Found",
+      "description": "The page you are looking for doesn't exist or has been moved.",
+      "button": "Back to Home"
+    },
+    "general": {
+      "title": "An Error Occurred",
+      "description": "Sorry, something went wrong. Please try again later.",
+      "button": "Back to Home"
+    }
+  },
   "footer": {
     "impressum": "Imprint",
     "privacy": "Privacy"
