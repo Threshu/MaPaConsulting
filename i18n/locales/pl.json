@@ -113,7 +113,195 @@
         "nameMin": "Imię musi mieć co najmniej 2 znaki",
         "emailInvalid": "Nieprawidłowy adres e-mail",
         "subjectMin": "Temat musi mieć co najmniej 3 znaki",
-        "messageMin": "Wiadomość musi mieć co najmniej 10 znaków"
+        "messageMin": "Wiadomość musi mieć co najmniej 10 znaków",
+        "privacyRequired": "Musisz zaakceptować politykę prywatności"
+      },
+      "privacyConsent": {
+        "text": "Zapoznałem się z",
+        "link": "Polityką Prywatności",
+        "accept": "i ją akceptuję"
+      }
+    }
+  },
+  "common": {
+    "backToHome": "Powrót do strony głównej"
+  },
+  "footer": {
+    "impressum": "Informacje prawne",
+    "privacy": "Prywatność"
+  },
+  "impressum": {
+    "title": "Informacje prawne",
+    "meta": {
+      "description": "Informacje prawne - MaPa Consulting"
+    },
+    "company": {
+      "title": "Informacje zgodnie z § 5 Ustawy o Usługach Cyfrowych (DDG)",
+      "content": "<strong>MaPa Doradztwo Biznesowe</strong><br>Właściciel: Mario Pape<br>Lindenstraße 2<br>97839 Esselbach<br>Niemcy"
+    },
+    "contact": {
+      "title": "Kontakt",
+      "content": "Telefon: +491759030149<br>E-mail: info{'@'}mapa-unternehmensberatung.de"
+    },
+    "tax": {
+      "title": "VAT",
+      "content": "Numer identyfikacji podatkowej: DE815006686"
+    },
+    "activity": {
+      "title": "Działalność",
+      "content": "MaPa Doradztwo Biznesowe świadczy usługi doradcze i interim management.<br>Działalność prowadzona jest na poziomie krajowym i międzynarodowym."
+    },
+    "responsible": {
+      "title": "Odpowiedzialny za treść zgodnie z § 18 Ust. 2 MStV",
+      "content": "Mario Pape<br>Lindenstraße 2<br>97839 Esselbach"
+    },
+    "liability": {
+      "title": "Odpowiedzialność za treści",
+      "content": "Jako dostawca usług jesteśmy odpowiedzialni za własne treści na tych stronach zgodnie z prawem powszechnym. Nie jesteśmy jednak zobowiązani do monitorowania przekazywanych lub przechowywanych informacji osób trzecich."
+    },
+    "copyright": {
+      "title": "Prawa autorskie",
+      "content": "Treści i dzieła stworzone przez operatora strony podlegają niemieckiemu prawu autorskiemu. Materiały osób trzecich są oznaczone jako takie."
+    }
+  },
+  "privacy": {
+    "title": "Polityka Prywatności",
+    "meta": {
+      "description": "Polityka Prywatności - MaPa Consulting"
+    },
+    "section1": {
+      "title": "I. Nazwa i adres administratora",
+      "content": "Administratorem w rozumieniu ogólnego rozporządzenia o ochronie danych jest:<br><br><strong>Mario Pape</strong><br>Lindenstraße 2<br>97839 Esselbach<br>+491759030149<br>E-mail: info{'@'}mapa-unternehmensberatung.de<br>Strona: mapa-unternehmensberatung.de"
+    },
+    "section2": {
+      "title": "II. Dane inspektora ochrony danych",
+      "content": "Inspektor ochrony danych administratora:<br><br><strong>Mario Pape</strong><br>Lindenstraße 2<br>97839 Esselbach<br>+491759030149<br>E-mail: info{'@'}mapa-unternehmensberatung.de<br>Strona: mapa-unternehmensberatung.de"
+    },
+    "section3": {
+      "title": "III. Ogólne informacje o przetwarzaniu danych",
+      "subsection1": {
+        "title": "1. Zakres przetwarzania danych osobowych",
+        "content": "Zbieramy i wykorzystujemy dane osobowe naszych użytkowników tylko w zakresie niezbędnym do zapewnienia funkcjonalnej strony internetowej oraz naszych treści i usług."
+      },
+      "subsection2": {
+        "title": "2. Podstawa prawna przetwarzania danych osobowych",
+        "content": "W zakresie, w jakim uzyskujemy zgodę osoby, której dane dotyczą, na przetwarzanie danych osobowych, art. 6 ust. 1 lit. a RODO służy jako podstawa prawna."
+      },
+      "subsection3": {
+        "title": "3. Usuwanie danych i okres przechowywania",
+        "content": "Dane osobowe osoby, której dane dotyczą, zostaną usunięte lub zablokowane, gdy tylko cel przechowywania przestanie obowiązywać."
+      }
+    },
+    "section4": {
+      "title": "IV. Udostępnianie strony i tworzenie plików dziennika",
+      "subsection1": {
+        "title": "1. Opis i zakres przetwarzania danych",
+        "content": "Za każdym razem, gdy dostęp do naszej strony internetowej jest uzyskiwany, nasz system automatycznie zbiera dane i informacje z systemu komputerowego wywołującego komputer."
+      },
+      "subsection2": {
+        "title": "2. Podstawa prawna przetwarzania danych",
+        "content": "Podstawą prawną tymczasowego przechowywania danych i plików dziennika jest art. 6 ust. 1 lit. f RODO."
+      },
+      "subsection3": {
+        "title": "3. Cel przetwarzania danych",
+        "content": "Tymczasowe przechowywanie adresu IP przez system jest konieczne, aby dostarczyć stronę internetową do komputera użytkownika."
+      },
+      "subsection4": {
+        "title": "4. Okres przechowywania",
+        "content": "Dane zostaną usunięte, gdy tylko nie będą już potrzebne do celu, dla którego zostały zebrane."
+      },
+      "subsection5": {
+        "title": "5. Możliwość sprzeciwu i usunięcia",
+        "content": "Zbieranie danych w celu udostępnienia strony internetowej i przechowywanie danych w plikach dziennika jest obowiązkowe dla działania strony."
+      }
+    },
+    "section5": {
+      "title": "V. Wykorzystanie plików cookie",
+      "subsection1": {
+        "title": "1. Opis i zakres przetwarzania danych",
+        "content": "Nasza strona używa plików cookie. Pliki cookie to pliki tekstowe przechowywane w przeglądarce internetowej lub przez przeglądarkę w systemie komputerowym użytkownika."
+      },
+      "subsection2": {
+        "title": "2. Podstawa prawna przetwarzania danych",
+        "content": "Podstawą prawną przetwarzania danych osobowych przy użyciu plików cookie jest art. 6 ust. 1 lit. f RODO."
+      },
+      "subsection3": {
+        "title": "3. Cel przetwarzania danych",
+        "content": "Celem wykorzystania technicznie niezbędnych plików cookie jest uproszczenie korzystania ze stron internetowych dla użytkowników."
+      },
+      "subsection4": {
+        "title": "4. Okres przechowywania, opcje sprzeciwu i usuwania",
+        "content": "Pliki cookie są przechowywane na komputerze użytkownika. Dlatego jako użytkownik masz pełną kontrolę nad wykorzystaniem plików cookie."
+      }
+    },
+    "section6": {
+      "title": "VI. Formularz kontaktowy i kontakt e-mail",
+      "subsection1": {
+        "title": "1. Opis i zakres przetwarzania danych",
+        "content": "Na naszej stronie internetowej dostępny jest formularz kontaktowy, który może być wykorzystany do elektronicznego kontaktu."
+      },
+      "subsection2": {
+        "title": "2. Podstawa prawna przetwarzania danych",
+        "content": "Podstawą prawną przetwarzania danych za zgodą użytkownika jest art. 6 ust. 1 lit. a RODO."
+      },
+      "subsection3": {
+        "title": "3. Cel przetwarzania danych",
+        "content": "Przetwarzanie danych osobowych z formularza służy wyłącznie do obsługi kontaktu."
+      },
+      "subsection4": {
+        "title": "4. Okres przechowywania",
+        "content": "Dane zostaną usunięte, gdy tylko nie będą już potrzebne do celu, dla którego zostały zebrane."
+      },
+      "subsection5": {
+        "title": "5. Możliwość sprzeciwu i usunięcia",
+        "content": "Użytkownik ma możliwość cofnięcia zgody na przetwarzanie danych osobowych w dowolnym momencie."
+      }
+    },
+    "section7": {
+      "title": "VII. Integracja usług i treści stron trzecich",
+      "content": "W naszej ofercie online integrujemy treści lub usługi dostawców zewnętrznych na podstawie naszych uzasadnionych interesów. Dotyczy to w szczególności Google Maps i Google Fonts."
+    },
+    "section8": {
+      "title": "VIII. Prawa osoby, której dane dotyczą",
+      "subsection1": {
+        "title": "1. Prawo do informacji",
+        "content": "Możesz zażądać od administratora potwierdzenia, czy przetwarzamy Twoje dane osobowe."
+      },
+      "subsection2": {
+        "title": "2. Prawo do sprostowania",
+        "content": "Masz prawo do sprostowania i/lub uzupełnienia wobec administratora."
+      },
+      "subsection3": {
+        "title": "3. Prawo do ograniczenia przetwarzania",
+        "content": "W określonych warunkach możesz zażądać ograniczenia przetwarzania."
+      },
+      "subsection4": {
+        "title": "4. Prawo do usunięcia",
+        "content": "Możesz zażądać od administratora natychmiastowego usunięcia dotyczących Cię danych osobowych."
+      },
+      "subsection5": {
+        "title": "5. Prawo do powiadomienia",
+        "content": "Masz prawo do powiadomienia o odbiorcach Twoich danych."
+      },
+      "subsection6": {
+        "title": "6. Prawo do przenoszenia danych",
+        "content": "Masz prawo do otrzymania dotyczących Cię danych osobowych w uporządkowanym formacie."
+      },
+      "subsection7": {
+        "title": "7. Prawo do sprzeciwu",
+        "content": "Masz prawo do sprzeciwu wobec przetwarzania z powodów wynikających z Twojej szczególnej sytuacji."
+      },
+      "subsection8": {
+        "title": "8. Prawo do cofnięcia",
+        "content": "Masz prawo do cofnięcia swojej zgody na ochronę danych w dowolnym momencie."
+      },
+      "subsection9": {
+        "title": "9. Zautomatyzowane podejmowanie decyzji",
+        "content": "Masz prawo do niepodlegania decyzji opartej wyłącznie na zautomatyzowanym przetwarzaniu."
+      },
+      "subsection10": {
+        "title": "10. Prawo do złożenia skargi",
+        "content": "Masz prawo do złożenia skargi do organu nadzorczego."
       }
     }
   }

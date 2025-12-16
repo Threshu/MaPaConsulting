@@ -43,6 +43,29 @@
 					class="w-full"
 				/>
 			</UFormField>
+
+			<UFormField name="privacyAccepted" required class="privacy-field">
+				<UCheckbox
+					v-model="formState.privacyAccepted"
+					:label="t('contact.form.privacyConsent.label')"
+					color="primary"
+				>
+					<template #label>
+						<span class="privacy-label">
+							{{ t("contact.form.privacyConsent.text") }}
+							<NuxtLink
+								:to="localePath('/datenschutz')"
+								class="privacy-link"
+								target="_blank"
+							>
+								{{ t("contact.form.privacyConsent.link") }}
+							</NuxtLink>
+							{{ t("contact.form.privacyConsent.accept") }}
+						</span>
+					</template>
+				</UCheckbox>
+			</UFormField>
+
 			<CtaButton type="submit" icon="i-heroicons-paper-airplane">
 				{{ t("contact.form.send") }}
 			</CtaButton>
@@ -52,6 +75,7 @@
 
 <script setup lang="ts">
 	const { t } = useI18n();
+	const localePath = useLocalePath();
 	const { formState, formSchema, onSubmit } = useContactForm();
 </script>
 
@@ -87,5 +111,29 @@
 		color: rgb(239, 68, 68);
 		font-size: 0.875rem;
 		margin-top: 0.25rem;
+	}
+
+	.privacy-field {
+		margin-top: 0.5rem;
+	}
+
+	.privacy-label {
+		font-size: 0.9375rem;
+		color: var(--color-text);
+		line-height: 1.6;
+	}
+
+	.privacy-link {
+		color: var(--color-primary);
+		text-decoration: underline;
+		font-weight: 500;
+	}
+
+	.privacy-link:hover {
+		opacity: 0.8;
+	}
+
+	.contact-form :deep([data-state="checked"] .iconify) {
+		color: white !important;
 	}
 </style>

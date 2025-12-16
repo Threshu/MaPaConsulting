@@ -9,7 +9,11 @@ export const useContactForm=() => {
     name: v.pipe(v.string(), v.minLength(2, t('contact.form.validation.nameMin'))),
     email: v.pipe(v.string(), v.email(t('contact.form.validation.emailInvalid'))),
     subject: v.pipe(v.string(), v.minLength(3, t('contact.form.validation.subjectMin'))),
-    message: v.pipe(v.string(), v.minLength(10, t('contact.form.validation.messageMin')))
+    message: v.pipe(v.string(), v.minLength(10, t('contact.form.validation.messageMin'))),
+    privacyAccepted: v.pipe(
+      v.boolean(),
+      v.check((val) => val===true, t('contact.form.validation.privacyRequired'))
+    )
   });
 
   type FormSchema=v.InferOutput<typeof formSchema>;
@@ -18,7 +22,8 @@ export const useContactForm=() => {
     name: '',
     email: '',
     subject: '',
-    message: ''
+    message: '',
+    privacyAccepted: false
   });
 
   const onSubmit=async (_event: FormSubmitEvent<FormSchema>) => {
@@ -43,6 +48,7 @@ export const useContactForm=() => {
       formState.email='';
       formState.subject='';
       formState.message='';
+      formState.privacyAccepted=false;
     } catch(error: any) {
       const errorCode=error.data?.code||'UNKNOWN_ERROR';
       const errorMessage=t(`contact.form.errors.${errorCode}`)||t('contact.form.error');

@@ -113,7 +113,195 @@
         "nameMin": "Name must be at least 2 characters",
         "emailInvalid": "Invalid email address",
         "subjectMin": "Subject must be at least 3 characters",
-        "messageMin": "Message must be at least 10 characters"
+        "messageMin": "Message must be at least 10 characters",
+        "privacyRequired": "You must accept the privacy policy"
+      },
+      "privacyConsent": {
+        "text": "I have read the",
+        "link": "Privacy Policy",
+        "accept": "and accept it"
+      }
+    }
+  },
+  "common": {
+    "backToHome": "Back to Home"
+  },
+  "footer": {
+    "impressum": "Imprint",
+    "privacy": "Privacy"
+  },
+  "impressum": {
+    "title": "Imprint",
+    "meta": {
+      "description": "Legal Information and Imprint - MaPa Consulting"
+    },
+    "company": {
+      "title": "Information according to § 5 Digital Services Act (DDG)",
+      "content": "<strong>MaPa Business Consulting</strong><br>Owner: Mario Pape<br>Lindenstraße 2<br>97839 Esselbach<br>Germany"
+    },
+    "contact": {
+      "title": "Contact",
+      "content": "Phone: +491759030149<br>Email: info{'@'}mapa-unternehmensberatung.de"
+    },
+    "tax": {
+      "title": "VAT",
+      "content": "Tax ID: DE815006686"
+    },
+    "activity": {
+      "title": "Business Activity",
+      "content": "MaPa Business Consulting provides consulting and interim management services.<br>Activities are conducted nationally and internationally."
+    },
+    "responsible": {
+      "title": "Responsible for content according to § 18 Para. 2 MStV",
+      "content": "Mario Pape<br>Lindenstraße 2<br>97839 Esselbach"
+    },
+    "liability": {
+      "title": "Liability for Content",
+      "content": "As a service provider, we are responsible for our own content on these pages in accordance with general laws. However, we are not obligated to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity."
+    },
+    "copyright": {
+      "title": "Copyright",
+      "content": "The content and works created by the site operator on these pages are subject to German copyright law. Third-party contributions are marked as such."
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "meta": {
+      "description": "Privacy Policy - MaPa Consulting"
+    },
+    "section1": {
+      "title": "I. Name and Address of the Controller",
+      "content": "The controller within the meaning of the General Data Protection Regulation and other national data protection laws is:<br><br><strong>Mario Pape</strong><br>Lindenstraße 2<br>97839 Esselbach<br>+491759030149<br>Email: info{'@'}mapa-unternehmensberatung.de<br>Website: mapa-unternehmensberatung.de"
+    },
+    "section2": {
+      "title": "II. Name and Address of the Data Protection Officer",
+      "content": "The data protection officer of the controller is:<br><br><strong>Mario Pape</strong><br>Lindenstraße 2<br>97839 Esselbach<br>+491759030149<br>Email: info{'@'}mapa-unternehmensberatung.de<br>Website: mapa-unternehmensberatung.de"
+    },
+    "section3": {
+      "title": "III. General Information on Data Processing",
+      "subsection1": {
+        "title": "1. Scope of Processing Personal Data",
+        "content": "We collect and use personal data of our users only to the extent necessary to provide a functional website and our content and services."
+      },
+      "subsection2": {
+        "title": "2. Legal Basis for Processing Personal Data",
+        "content": "Insofar as we obtain consent from the data subject for processing personal data, Art. 6 para. 1 lit. a EU General Data Protection Regulation (GDPR) serves as the legal basis."
+      },
+      "subsection3": {
+        "title": "3. Data Deletion and Storage Duration",
+        "content": "The personal data of the data subject will be deleted or blocked as soon as the purpose of storage ceases to apply."
+      }
+    },
+    "section4": {
+      "title": "IV. Provision of the Website and Creation of Log Files",
+      "subsection1": {
+        "title": "1. Description and Scope of Data Processing",
+        "content": "Each time our website is accessed, our system automatically collects data and information from the computer system of the calling computer."
+      },
+      "subsection2": {
+        "title": "2. Legal Basis for Data Processing",
+        "content": "The legal basis for the temporary storage of data and log files is Art. 6 para. 1 lit. f GDPR."
+      },
+      "subsection3": {
+        "title": "3. Purpose of Data Processing",
+        "content": "The temporary storage of the IP address by the system is necessary to deliver the website to the user's computer."
+      },
+      "subsection4": {
+        "title": "4. Storage Duration",
+        "content": "The data will be deleted as soon as it is no longer necessary for the purpose of its collection."
+      },
+      "subsection5": {
+        "title": "5. Possibility of Objection and Removal",
+        "content": "The collection of data for the provision of the website and the storage of data in log files is mandatory for the operation of the website."
+      }
+    },
+    "section5": {
+      "title": "V. Use of Cookies",
+      "subsection1": {
+        "title": "1. Description and Scope of Data Processing",
+        "content": "Our website uses cookies. Cookies are text files that are stored in the internet browser or by the internet browser on the user's computer system."
+      },
+      "subsection2": {
+        "title": "2. Legal Basis for Data Processing",
+        "content": "The legal basis for processing personal data using cookies is Art. 6 para. 1 lit. f GDPR."
+      },
+      "subsection3": {
+        "title": "3. Purpose of Data Processing",
+        "content": "The purpose of using technically necessary cookies is to simplify the use of websites for users."
+      },
+      "subsection4": {
+        "title": "4. Storage Duration, Objection and Removal Options",
+        "content": "Cookies are stored on the user's computer. Therefore, as a user, you have full control over the use of cookies."
+      }
+    },
+    "section6": {
+      "title": "VI. Contact Form and Email Contact",
+      "subsection1": {
+        "title": "1. Description and Scope of Data Processing",
+        "content": "A contact form is available on our website which can be used for electronic contact."
+      },
+      "subsection2": {
+        "title": "2. Legal Basis for Data Processing",
+        "content": "The legal basis for processing data with the user's consent is Art. 6 para. 1 lit. a GDPR."
+      },
+      "subsection3": {
+        "title": "3. Purpose of Data Processing",
+        "content": "The processing of personal data from the input form serves us solely to process the contact."
+      },
+      "subsection4": {
+        "title": "4. Storage Duration",
+        "content": "The data will be deleted as soon as it is no longer necessary for the purpose of its collection."
+      },
+      "subsection5": {
+        "title": "5. Possibility of Objection and Removal",
+        "content": "The user has the option to revoke consent to the processing of personal data at any time."
+      }
+    },
+    "section7": {
+      "title": "VII. Integration of Third-Party Services and Content",
+      "content": "We integrate content or service offers from third-party providers within our online offering based on our legitimate interests. This particularly applies to Google Maps and Google Fonts."
+    },
+    "section8": {
+      "title": "VIII. Rights of the Data Subject",
+      "subsection1": {
+        "title": "1. Right to Information",
+        "content": "You can request confirmation from the controller as to whether personal data concerning you is being processed by us."
+      },
+      "subsection2": {
+        "title": "2. Right to Rectification",
+        "content": "You have the right to rectification and/or completion with respect to the controller."
+      },
+      "subsection3": {
+        "title": "3. Right to Restriction of Processing",
+        "content": "Under certain conditions, you may request the restriction of processing."
+      },
+      "subsection4": {
+        "title": "4. Right to Erasure",
+        "content": "You can request that the controller immediately delete the personal data concerning you."
+      },
+      "subsection5": {
+        "title": "5. Right to Notification",
+        "content": "You have the right to be notified about recipients of your data."
+      },
+      "subsection6": {
+        "title": "6. Right to Data Portability",
+        "content": "You have the right to receive the personal data concerning you in a structured format."
+      },
+      "subsection7": {
+        "title": "7. Right to Object",
+        "content": "You have the right to object to processing for reasons arising from your particular situation."
+      },
+      "subsection8": {
+        "title": "8. Right to Revoke",
+        "content": "You have the right to revoke your data protection consent declaration at any time."
+      },
+      "subsection9": {
+        "title": "9. Automated Decision Making",
+        "content": "You have the right not to be subject to a decision based solely on automated processing."
+      },
+      "subsection10": {
+        "title": "10. Right to Lodge a Complaint",
+        "content": "You have the right to lodge a complaint with a supervisory authority."
       }
     }
   }

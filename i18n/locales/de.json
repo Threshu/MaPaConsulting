@@ -113,7 +113,195 @@
         "nameMin": "Name muss mindestens 2 Zeichen lang sein",
         "emailInvalid": "Ungültige E-Mail-Adresse",
         "subjectMin": "Betreff muss mindestens 3 Zeichen lang sein",
-        "messageMin": "Nachricht muss mindestens 10 Zeichen lang sein"
+        "messageMin": "Nachricht muss mindestens 10 Zeichen lang sein",
+        "privacyRequired": "Sie müssen die Datenschutzerklärung akzeptieren"
+      },
+      "privacyConsent": {
+        "text": "Ich habe die",
+        "link": "Datenschutzerklärung",
+        "accept": "gelesen und akzeptiere sie"
+      }
+    }
+  },
+  "common": {
+    "backToHome": "Zurück zur Startseite"
+  },
+  "footer": {
+    "impressum": "Impressum",
+    "privacy": "Datenschutz"
+  },
+  "impressum": {
+    "title": "Impressum",
+    "meta": {
+      "description": "Impressum und rechtliche Informationen - MaPa Consulting"
+    },
+    "company": {
+      "title": "Angaben gemäß § 5 Digitale-Dienste-Gesetz (DDG)",
+      "content": "<strong>MaPa-Unternehmensberatung</strong><br>Inhaber: Mario Pape<br>Lindenstraße 2<br>97839 Esselbach<br>Deutschland"
+    },
+    "contact": {
+      "title": "Kontakt",
+      "content": "Telefon: +491759030149<br>E-Mail: info{'@'}mapa-unternehmensberatung.de"
+    },
+    "tax": {
+      "title": "Umsatzsteuer",
+      "content": "Steuernummer: DE815006686"
+    },
+    "activity": {
+      "title": "Tätigkeit",
+      "content": "MaPa-Unternehmensberatung erbringt Beratungs- und Interim-Management-Leistungen.<br>Die Tätigkeit erfolgt national sowie international."
+    },
+    "responsible": {
+      "title": "Inhaltlich verantwortlich gemäß § 18 Abs. 2 MStV",
+      "content": "Mario Pape<br>Lindenstraße 2<br>97839 Esselbach"
+    },
+    "liability": {
+      "title": "Haftung für Inhalte",
+      "content": "Als Diensteanbieter sind wir gemäß § 7 Abs. 1 DDG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 DDG sind wir jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen."
+    },
+    "copyright": {
+      "title": "Urheberrecht",
+      "content": "Die durch den Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Beiträge Dritter sind als solche gekennzeichnet."
+    }
+  },
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "meta": {
+      "description": "Datenschutzerklärung - MaPa Consulting"
+    },
+    "section1": {
+      "title": "I. Name und Anschrift des Verantwortlichen",
+      "content": "Der Verantwortliche im Sinne der Datenschutz-Grundverordnung und anderer nationaler Datenschutzgesetze der Mitgliedsstaaten sowie sonstiger datenschutzrechtlicher Bestimmungen ist die:<br><br><strong>Mario Pape</strong><br>Lindenstraße 2<br>97839 Esselbach<br>+491759030149<br>E-Mail: info{'@'}mapa-unternehmensberatung.de<br>Internet: mapa-unternehmensberatung.de"
+    },
+    "section2": {
+      "title": "II. Name und Anschrift des Datenschutzbeauftragten",
+      "content": "Der Datenschutzbeauftragte des Verantwortlichen ist:<br><br><strong>Mario Pape</strong><br>Lindenstraße 2<br>97839 Esselbach<br>+491759030149<br>E-Mail: info{'@'}mapa-unternehmensberatung.de<br>Internet: mapa-unternehmensberatung.de"
+    },
+    "section3": {
+      "title": "III. Allgemeines zur Datenverarbeitung",
+      "subsection1": {
+        "title": "1. Umfang der Verarbeitung personenbezogener Daten",
+        "content": "Wir erheben und verwenden personenbezogene Daten unserer Nutzer grundsätzlich nur, soweit dies zur Bereitstellung einer funktionsfähigen Website sowie unserer Inhalte und Leistungen erforderlich ist. Die Erhebung und Verwendung personenbezogener Daten unserer Nutzer erfolgt regelmäßig nur nach Einwilligung des Nutzers."
+      },
+      "subsection2": {
+        "title": "2. Rechtsgrundlage für die Verarbeitung personenbezogener Daten",
+        "content": "Soweit wir für Verarbeitungsvorgänge personenbezogener Daten eine Einwilligung der betroffenen Person einholen, dient Art. 6 Abs. 1 lit. a EU-Datenschutzgrundverordnung (DSGVO) als Rechtsgrundlage für die Verarbeitung personenbezogener Daten."
+      },
+      "subsection3": {
+        "title": "3. Datenlöschung und Speicherdauer",
+        "content": "Die personenbezogenen Daten der betroffenen Person werden gelöscht oder gesperrt, sobald der Zweck der Speicherung entfällt."
+      }
+    },
+    "section4": {
+      "title": "IV. Bereitstellung der Website und Erstellung von Logfiles",
+      "subsection1": {
+        "title": "1. Beschreibung und Umfang der Datenverarbeitung",
+        "content": "Bei jedem Aufruf unserer Internetseite erfasst unser System automatisiert Daten und Informationen vom Computersystem des aufrufenden Rechners."
+      },
+      "subsection2": {
+        "title": "2. Rechtsgrundlage für die Datenverarbeitung",
+        "content": "Rechtsgrundlage für die vorübergehende Speicherung der Daten und der Logfiles ist Art. 6 Abs. 1 lit. f DSGVO."
+      },
+      "subsection3": {
+        "title": "3. Zweck der Datenverarbeitung",
+        "content": "Die vorübergehende Speicherung der IP-Adresse durch das System ist notwendig, um eine Auslieferung der Website an den Rechner des Nutzers zu ermöglichen."
+      },
+      "subsection4": {
+        "title": "4. Dauer der Speicherung",
+        "content": "Die Daten werden gelöscht, sobald sie für die Erreichung des Zweckes ihrer Erhebung nicht mehr erforderlich sind."
+      },
+      "subsection5": {
+        "title": "5. Widerspruchs- und Beseitigungsmöglichkeit",
+        "content": "Die Erfassung der Daten zur Bereitstellung der Website und die Speicherung der Daten in Logfiles ist für den Betrieb der Internetseite zwingend erforderlich."
+      }
+    },
+    "section5": {
+      "title": "V. Verwendung von Cookies",
+      "subsection1": {
+        "title": "1. Beschreibung und Umfang der Datenverarbeitung",
+        "content": "Unsere Webseite verwendet Cookies. Bei Cookies handelt es sich um Textdateien, die im Internetbrowser bzw. vom Internetbrowser auf dem Computersystem des Nutzers gespeichert werden."
+      },
+      "subsection2": {
+        "title": "2. Rechtsgrundlage für die Datenverarbeitung",
+        "content": "Die Rechtsgrundlage für die Verarbeitung personenbezogener Daten unter Verwendung von Cookies ist Art. 6 Abs. 1 lit. f DSGVO."
+      },
+      "subsection3": {
+        "title": "3. Zweck der Datenverarbeitung",
+        "content": "Der Zweck der Verwendung technisch notwendiger Cookies ist, die Nutzung von Websites für die Nutzer zu vereinfachen."
+      },
+      "subsection4": {
+        "title": "4. Dauer der Speicherung, Widerspruchs- und Beseitigungsmöglichkeit",
+        "content": "Cookies werden auf dem Rechner des Nutzers gespeichert und von diesem an unserer Seite übermittelt. Daher haben Sie als Nutzer auch die volle Kontrolle über die Verwendung von Cookies."
+      }
+    },
+    "section6": {
+      "title": "VI. Kontaktformular und E-Mail-Kontakt",
+      "subsection1": {
+        "title": "1. Beschreibung und Umfang der Datenverarbeitung",
+        "content": "Auf unserer Internetseite ist ein Kontaktformular vorhanden, welches für die elektronische Kontaktaufnahme genutzt werden kann."
+      },
+      "subsection2": {
+        "title": "2. Rechtsgrundlage für die Datenverarbeitung",
+        "content": "Rechtsgrundlage für die Verarbeitung der Daten ist bei Vorliegen einer Einwilligung des Nutzers Art. 6 Abs. 1 lit. a DSGVO."
+      },
+      "subsection3": {
+        "title": "3. Zweck der Datenverarbeitung",
+        "content": "Die Verarbeitung der personenbezogenen Daten aus der Eingabemaske dient uns allein zur Bearbeitung der Kontaktaufnahme."
+      },
+      "subsection4": {
+        "title": "4. Dauer der Speicherung",
+        "content": "Die Daten werden gelöscht, sobald sie für die Erreichung des Zweckes ihrer Erhebung nicht mehr erforderlich sind."
+      },
+      "subsection5": {
+        "title": "5. Widerspruchs- und Beseitigungsmöglichkeit",
+        "content": "Der Nutzer hat jederzeit die Möglichkeit, seine Einwilligung zur Verarbeitung der personenbezogenen Daten zu widerrufen."
+      }
+    },
+    "section7": {
+      "title": "VII. Einbindung von Diensten und Inhalten Dritter",
+      "content": "Wir setzen innerhalb unseres Onlineangebotes auf Grundlage unserer berechtigten Interessen Inhalts- oder Serviceangebote von Drittanbietern ein. Dies betrifft insbesondere Google Maps und Google Fonts."
+    },
+    "section8": {
+      "title": "VIII. Rechte der betroffenen Person",
+      "subsection1": {
+        "title": "1. Auskunftsrecht",
+        "content": "Sie können von dem Verantwortlichen eine Bestätigung darüber verlangen, ob personenbezogene Daten, die Sie betreffen, von uns verarbeitet werden."
+      },
+      "subsection2": {
+        "title": "2. Recht auf Berichtigung",
+        "content": "Sie haben ein Recht auf Berichtigung und/oder Vervollständigung gegenüber dem Verantwortlichen."
+      },
+      "subsection3": {
+        "title": "3. Recht auf Einschränkung der Verarbeitung",
+        "content": "Unter bestimmten Voraussetzungen können Sie die Einschränkung der Verarbeitung verlangen."
+      },
+      "subsection4": {
+        "title": "4. Recht auf Löschung",
+        "content": "Sie können von dem Verantwortlichen verlangen, dass die Sie betreffenden personenbezogenen Daten unverzüglich gelöscht werden."
+      },
+      "subsection5": {
+        "title": "5. Recht auf Unterrichtung",
+        "content": "Sie haben das Recht auf Unterrichtung über Empfänger Ihrer Daten."
+      },
+      "subsection6": {
+        "title": "6. Recht auf Datenübertragbarkeit",
+        "content": "Sie haben das Recht, die Sie betreffenden personenbezogenen Daten in einem strukturierten Format zu erhalten."
+      },
+      "subsection7": {
+        "title": "7. Widerspruchsrecht",
+        "content": "Sie haben das Recht, aus Gründen Ihrer besonderen Situation gegen die Verarbeitung Widerspruch einzulegen."
+      },
+      "subsection8": {
+        "title": "8. Recht auf Widerruf",
+        "content": "Sie haben das Recht, Ihre datenschutzrechtliche Einwilligungserklärung jederzeit zu widerrufen."
+      },
+      "subsection9": {
+        "title": "9. Automatisierte Entscheidung",
+        "content": "Sie haben das Recht, nicht einer ausschließlich auf automatisierter Verarbeitung beruhenden Entscheidung unterworfen zu werden."
+      },
+      "subsection10": {
+        "title": "10. Recht auf Beschwerde",
+        "content": "Sie haben das Recht auf Beschwerde bei einer Aufsichtsbehörde."
       }
     }
   }

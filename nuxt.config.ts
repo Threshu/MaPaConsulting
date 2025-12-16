@@ -33,7 +33,7 @@ export default defineNuxtConfig({
 
   i18n: {
     defaultLocale: 'de',
-    strategy: 'no_prefix',
+    strategy: 'prefix',
     langDir: 'locales',
     locales: [
       { code: 'de', name: 'Deutsch', file: 'de.json' },
@@ -44,7 +44,10 @@ export default defineNuxtConfig({
       useCookie: true,
       cookieKey: 'mapa_locale',
       redirectOn: 'root',
-      alwaysRedirect: false
+      alwaysRedirect: true
+    },
+    compilation: {
+      strictMessage: false
     }
   },
 

@@ -3,11 +3,11 @@
 		:to="to"
 		:target="target"
 		:type="type"
-		size="xl"
+		:size="size"
 		:leading-icon="icon"
 		style="color: white !important"
 		class="shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 [&_svg]:text-white!"
-		:ui="{ base: 'gap-3', leadingIcon: 'size-10' }"
+		:ui="{ base: 'gap-3', leadingIcon: 'size-5' }"
 		@click="handleClick"
 	>
 		<slot />
@@ -20,6 +20,7 @@
 		target?: string;
 		type?: "button" | "submit" | "reset";
 		icon?: string;
+		size?: "xs" | "sm" | "md" | "lg" | "xl";
 	}
 
 	withDefaults(defineProps<Props>(), {
@@ -27,6 +28,7 @@
 		target: undefined,
 		type: "button",
 		icon: undefined,
+		size: "xl",
 	});
 
 	const emit = defineEmits<{
