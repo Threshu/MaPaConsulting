@@ -56,15 +56,15 @@
 </template>
 
 <script setup lang="ts">
+	import { usePageSeo } from "~/composables/usePageSeo";
+
 	const { t } = useI18n();
 	const localePath = useLocalePath();
 
-	useHead({
+	usePageSeo({
 		title: t("impressum.title"),
-		meta: [
-			{ name: "description", content: t("impressum.meta.description") },
-			{ name: "robots", content: "noindex, follow" },
-		],
+		description: t("impressum.meta.description"),
+		noindex: true,
 	});
 </script>
 

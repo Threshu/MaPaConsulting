@@ -145,7 +145,7 @@
   "impressum": {
     "title": "Imprint",
     "meta": {
-      "description": "Legal Information and Imprint - MaPa Consulting"
+      "description": "Legal information and imprint of MaPa Consulting - Business consulting for operational excellence and AI implementation."
     },
     "company": {
       "title": "Information according to § 5 Digital Services Act (DDG)",
@@ -179,7 +179,7 @@
   "privacy": {
     "title": "Privacy Policy",
     "meta": {
-      "description": "Privacy Policy - MaPa Consulting"
+      "description": "Privacy policy of MaPa Consulting - Information on the processing of your personal data in accordance with GDPR."
     },
     "section1": {
       "title": "I. Name and Address of the Controller",

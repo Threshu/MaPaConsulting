@@ -94,15 +94,15 @@
 </template>
 
 <script setup lang="ts">
+	import { usePageSeo } from "~/composables/usePageSeo";
+
 	const { t } = useI18n();
 	const localePath = useLocalePath();
 
-	useHead({
+	usePageSeo({
 		title: t("privacy.title"),
-		meta: [
-			{ name: "description", content: t("privacy.meta.description") },
-			{ name: "robots", content: "noindex, follow" },
-		],
+		description: t("privacy.meta.description"),
+		noindex: true,
 	});
 </script>
 

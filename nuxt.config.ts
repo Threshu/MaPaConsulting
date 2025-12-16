@@ -16,7 +16,8 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/image',
     '@nuxt/ui',
-    '@nuxtjs/i18n'
+    '@nuxtjs/i18n',
+    '@nuxtjs/sitemap'
   ],
 
   css: ['~/assets/css/main.css'],
@@ -63,7 +64,9 @@ export default defineNuxtConfig({
       }
     }
   },
-
+  site: {
+    url: 'https://mapa-unternehmensberatung.de'
+  },
   app: {
     head: {
       charset: 'utf-8',

@@ -7,15 +7,15 @@
 </template>
 
 <script setup lang="ts">
+	import { usePageSeo } from "~/composables/usePageSeo";
+
 	const { t } = useI18n();
 
-	useHead({
+	usePageSeo({
 		title: t("meta.title"),
-		meta: [
-			{ name: "description", content: t("meta.description") },
-			{ property: "og:title", content: t("meta.title") },
-			{ property: "og:description", content: t("meta.description") },
-			{ property: "og:type", content: "website" },
-		],
+		description: t("meta.description"),
+		type: "website",
 	});
+
+	useSchemaOrg();
 </script>

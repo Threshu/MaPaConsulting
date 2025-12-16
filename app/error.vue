@@ -17,6 +17,8 @@
 </template>
 
 <script setup lang="ts">
+	import { usePageSeo } from "./composables/usePageSeo";
+
 	const props = defineProps({
 		error: {
 			type: Object,
@@ -42,8 +44,10 @@
 		is404.value ? t("error.404.button") : t("error.general.button")
 	);
 
-	useHead({
+	usePageSeo({
 		title: errorTitle.value,
+		description: errorDescription.value,
+		noindex: true,
 	});
 </script>
 
