@@ -22,7 +22,7 @@
 				format="webp"
 				class="portrait"
 				fetchpriority="high"
-				sizes="sm:100vw md:50vw lg:726px"
+				sizes="300px md:400px"
 			/>
 		</div>
 	</div>
