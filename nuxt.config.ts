@@ -3,6 +3,11 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-12-02',
   devtools: { enabled: true },
 
+  routeRules: {
+    '/api/**': { prerender: false },
+    '/**': { prerender: true }
+  },
+
   runtimeConfig: {
     formspreeEndpoint: ''
   },
@@ -81,7 +86,11 @@ export default defineNuxtConfig({
         { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
         { rel: 'manifest', href: '/site.webmanifest' },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
-        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous' }
+        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous' },
+        {
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap'
+        }
       ],
       meta: [
         { name: 'theme-color', content: '#1a4b84' },

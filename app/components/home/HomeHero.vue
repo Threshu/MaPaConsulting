@@ -19,6 +19,7 @@
 				alt="Mario Pape"
 				width="726"
 				height="1090"
+				format="webp"
 				class="portrait"
 				fetchpriority="high"
 				sizes="sm:100vw md:50vw lg:726px"
