@@ -3,9 +3,11 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-12-02',
   devtools: { enabled: true },
 
-  routeRules: {
-    '/api/**': { prerender: false },
-    '/**': { prerender: true }
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: ['/de/', '/en/', '/pl/']
+    }
   },
 
   runtimeConfig: {

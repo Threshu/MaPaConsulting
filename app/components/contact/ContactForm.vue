@@ -47,14 +47,13 @@
 			<UFormField name="privacyAccepted" required class="privacy-field">
 				<UCheckbox
 					v-model="formState.privacyAccepted"
-					:label="t('contact.form.privacyConsent.label')"
 					color="primary"
 				>
 					<template #label>
 						<span class="privacy-label">
 							{{ t("contact.form.privacyConsent.text") }}
 							<NuxtLink
-								:to="localePath('/datenschutz')"
+								:to="localePath('datenschutz')"
 								class="privacy-link"
 								target="_blank"
 							>
