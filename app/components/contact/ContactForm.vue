@@ -48,6 +48,7 @@
 				<UCheckbox
 					v-model="formState.privacyAccepted"
 					color="primary"
+					:aria-label="t('contact.form.privacyConsent.ariaLabel')"
 				>
 					<template #label>
 						<span class="privacy-label">

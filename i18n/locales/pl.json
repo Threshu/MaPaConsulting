@@ -119,7 +119,8 @@
       "privacyConsent": {
         "text": "Zapoznałem się z",
         "link": "Polityką Prywatności",
-        "accept": "i ją akceptuję"
+        "accept": "i ją akceptuję",
+        "ariaLabel": "Zaakceptuj Politykę Prywatności"
       }
     }
   },
@@ -137,6 +138,9 @@
       "description": "Przepraszamy, coś poszło nie tak. Spróbuj ponownie później.",
       "button": "Powrót do strony głównej"
     }
+  },
+  "accessibility": {
+    "changeLanguage": "Zmień język"
   },
   "footer": {
     "impressum": "Informacje prawne",

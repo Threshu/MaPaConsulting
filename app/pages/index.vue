@@ -1,9 +1,9 @@
 <template>
-	<div>
+	<main>
 		<HomeSection />
 		<LazyAboutSection hydrate-on-visible />
 		<LazyContactSection hydrate-on-visible />
-	</div>
+	</main>
 </template>
 
 <script setup lang="ts">

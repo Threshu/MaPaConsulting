@@ -17,6 +17,7 @@
 				color="neutral"
 				variant="ghost"
 				size="xl"
+				:aria-label="t('accessibility.changeLanguage')"
 				:ui="{
 					base: 'bg-transparent hover:bg-white/10 active:bg-white/10',
 					leadingIcon: 'size-10 rounded-full ring-2 ring-[var(--color-title)]',
@@ -29,7 +30,7 @@
 <script setup lang="ts">
 	import type { DropdownMenuItem } from "@nuxt/ui";
 
-	const { locale, setLocale } = useI18n();
+	const { t, locale, setLocale } = useI18n();
 
 	const languages = [
 		{ code: "de", name: "Deutsch", icon: "i-circle-flags-de" },

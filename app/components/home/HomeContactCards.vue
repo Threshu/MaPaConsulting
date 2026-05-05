@@ -19,7 +19,7 @@
 				<div class="contact-content">
 					<UIcon :name="info.icon" class="contact-icon" />
 					<div class="contact-text">
-						<h3 class="contact-title">{{ info.title }}</h3>
+						<p class="contact-title">{{ info.title }}</p>
 						<p class="contact-value">{{ info.value }}</p>
 					</div>
 				</div>
@@ -27,7 +27,7 @@
 			<div v-else class="contact-content">
 				<UIcon :name="info.icon" class="contact-icon" />
 				<div class="contact-text">
-					<h3 class="contact-title">{{ info.title }}</h3>
+					<p class="contact-title">{{ info.title }}</p>
 					<p class="contact-value">{{ info.value }}</p>
 				</div>
 			</div>

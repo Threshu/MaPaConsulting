@@ -119,7 +119,8 @@
       "privacyConsent": {
         "text": "Ich habe die",
         "link": "Datenschutzerklärung",
-        "accept": "gelesen und akzeptiere sie"
+        "accept": "gelesen und akzeptiere sie",
+        "ariaLabel": "Datenschutzerklärung akzeptieren"
       }
     }
   },
@@ -137,6 +138,9 @@
       "description": "Entschuldigung, etwas ist schiefgelaufen. Bitte versuchen Sie es später erneut.",
       "button": "Zurück zur Startseite"
     }
+  },
+  "accessibility": {
+    "changeLanguage": "Sprache ändern"
   },
   "footer": {
     "impressum": "Impressum",

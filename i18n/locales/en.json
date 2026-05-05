@@ -119,7 +119,8 @@
       "privacyConsent": {
         "text": "I have read the",
         "link": "Privacy Policy",
-        "accept": "and accept it"
+        "accept": "and accept it",
+        "ariaLabel": "Accept Privacy Policy"
       }
     }
   },
@@ -137,6 +138,9 @@
       "description": "Sorry, something went wrong. Please try again later.",
       "button": "Back to Home"
     }
+  },
+  "accessibility": {
+    "changeLanguage": "Change language"
   },
   "footer": {
     "impressum": "Imprint",
