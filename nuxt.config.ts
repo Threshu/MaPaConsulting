@@ -24,8 +24,13 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/ui',
     '@nuxtjs/i18n',
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    'nuxt-vitalizer'
   ],
+
+  vitalizer: {
+    disableStylesheets: 'entry'
+  },
 
   css: ['~/assets/css/main.css'],
 
