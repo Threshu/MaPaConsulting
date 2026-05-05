@@ -46,6 +46,7 @@
 
 			<UFormField name="privacyAccepted" required class="privacy-field">
 				<UCheckbox
+					id="privacyAccepted"
 					v-model="formState.privacyAccepted"
 					color="primary"
 					:aria-label="t('contact.form.privacyConsent.ariaLabel')"
