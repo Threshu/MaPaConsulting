@@ -119,8 +119,7 @@
       "privacyConsent": {
         "text": "Zapoznałem się z",
         "link": "Polityką Prywatności",
-        "accept": "i ją akceptuję",
-        "ariaLabel": "Zaakceptuj Politykę Prywatności"
+        "accept": "i ją akceptuję"
       }
     }
   },

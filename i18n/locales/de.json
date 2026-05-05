@@ -119,8 +119,7 @@
       "privacyConsent": {
         "text": "Ich habe die",
         "link": "Datenschutzerklärung",
-        "accept": "gelesen und akzeptiere sie",
-        "ariaLabel": "Datenschutzerklärung akzeptieren"
+        "accept": "gelesen und akzeptiere sie"
       }
     }
   },

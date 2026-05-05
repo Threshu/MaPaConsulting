@@ -37,6 +37,8 @@ Professional multilingual consulting website built with Nuxt 4, featuring operat
 - **Internationalization**: @nuxtjs/i18n 10.2.1
 - **Validation**: Valibot
 - **Form Backend**: Formspree
+- **SEO**: @nuxtjs/sitemap
+- **Performance**: nuxt-vitalizer 2.0.0
 - **TypeScript**: Full type safety
 - **Deployment**: Netlify (Continuous Deployment, SSL, Serverless Functions)
 
@@ -121,21 +123,23 @@ app/
 │   ├── about/          # About section components
 │   ├── contact/        # Contact form and info cards
 │   ├── home/           # Hero and home components
-│   ├── common/         # Shared components
-│   └── CtaButton.vue   # Reusable CTA button component
+│   ├── CtaButton.vue   # Reusable CTA button component
+│   └── ScrollToTop.vue # Scroll-to-top button
 ├── composables/
 │   ├── useContactForm.ts    # Form state and validation
-│   └── useScrollTo.ts       # Smooth scroll navigation
+│   ├── useScrollTo.ts       # Smooth scroll navigation
+│   ├── usePageSeo.ts        # Page-level SEO meta tags
+│   └── useSchemaOrg.ts      # Schema.org structured data
 ├── layouts/
 │   └── default.vue     # Main layout with header/footer
-├── pages/
-│   ├── index.vue       # Home page
-│   ├── impressum.vue   # Legal information (Impressum)
-│   ├── datenschutz.vue # Privacy policy (GDPR)
-│   └── error.vue       # Custom 404 and error pages
-└── server/
-    └── api/
-        └── contact.ts  # Contact form API endpoint
+└── pages/
+    ├── index.vue       # Home page
+    ├── impressum.vue   # Legal information (Impressum)
+    ├── datenschutz.vue # Privacy policy (GDPR)
+    └── error.vue       # Custom 404 and error pages
+server/
+└── api/
+    └── contact.post.ts # Contact form API endpoint
 i18n/
 └── locales/
     ├── de.json         # German translations
@@ -242,7 +246,10 @@ Custom properties defined in `assets/css/main.css` for theming consistency.
 
 - Server-Side Rendering (SSR)
 - Code splitting and lazy loading
-- Image optimization with @nuxt/image
+- **nuxt-vitalizer** — eliminates render-blocking entry.css (Nuxt UI v4 known issue)
+- **features.inlineStyles** — inlines component CSS to reduce critical request chain
+- **@nuxt/fonts** with `preload: true` — self-hosted fonts preloaded from HTML
+- **@nuxt/image** — WebP conversion, quality control, responsive `sizes` and `densities`
 - Minimal JavaScript bundle
 - CSS purging with Tailwind
 
@@ -252,7 +259,7 @@ This is a production website for MaPa Consulting. For inquiries, please contact 
 
 ## License
 
-© 2025 MaPa Consulting. All rights reserved.
+© 2026 MaPa Consulting. All rights reserved.
 
 ---
 

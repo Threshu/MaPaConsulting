@@ -119,8 +119,7 @@
       "privacyConsent": {
         "text": "I have read the",
         "link": "Privacy Policy",
-        "accept": "and accept it",
-        "ariaLabel": "Accept Privacy Policy"
+        "accept": "and accept it"
       }
     }
   },
