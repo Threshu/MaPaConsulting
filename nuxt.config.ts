@@ -29,6 +29,13 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
+  fonts: {
+    defaults: {
+      weights: [400, 500, 600],
+      preload: true
+    }
+  },
+
   ui: {
     theme: {
       colors: ['primary'],
