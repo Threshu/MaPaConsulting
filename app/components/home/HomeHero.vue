@@ -20,6 +20,7 @@
 				width="726"
 				height="1090"
 				format="webp"
+				quality="75"
 				class="portrait"
 				fetchpriority="high"
 				sizes="300px md:400px"
