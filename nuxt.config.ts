@@ -35,6 +35,10 @@ export default defineNuxtConfig({
     }
   },
 
+  features: {
+    inlineStyles: true
+  },
+
   ui: {
     theme: {
       colors: ['primary'],

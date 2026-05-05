@@ -8,7 +8,7 @@ export const useSchemaOrg=() => {
     name: 'MaPa Consulting',
     legalName: 'MaPa Doradztwo Biznesowe',
     url: 'https://mapa-unternehmensberatung.de',
-    logo: 'https://mapa-unternehmensberatung.de/assets/img/portrait_tranparent.png',
+    logo: 'https://mapa-unternehmensberatung.de/assets/img/portrait_bg.png',
     image: 'https://mapa-unternehmensberatung.de/og-image.jpg',
     description: locale.value==='de'
       ? 'Unternehmensberatung für operative Exzellenz, Prozessoptimierung und KI-Implementierung'

@@ -15,7 +15,7 @@
 
 		<div class="home-image">
 			<NuxtImg
-				src="/assets/img/portrait_tranparent.png"
+				src="/assets/img/portrait_bg.png"
 				alt="Mario Pape"
 				width="726"
 				height="1090"
