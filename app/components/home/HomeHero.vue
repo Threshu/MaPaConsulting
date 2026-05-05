@@ -21,6 +21,7 @@
 				height="1090"
 				format="webp"
 				quality="75"
+				densities="1"
 				class="portrait"
 				fetchpriority="high"
 				sizes="300px md:400px"
