@@ -49,10 +49,10 @@
 					id="privacyAccepted"
 					v-model="formState.privacyAccepted"
 					color="primary"
-					:aria-labelledby="'privacy-label'"
+					name=""
 				>
 					<template #label>
-						<span id="privacy-label" class="privacy-label">
+						<span class="privacy-label">
 							{{ t("contact.form.privacyConsent.text") }}
 							<NuxtLink
 								:to="localePath('datenschutz')"
