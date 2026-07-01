@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 588 416" width="588" height="416" role="img" aria-label="MaPa — Operations, Turnaround, Interim">
+  <defs>
+    <style>
+      .mp-primary { fill:#F8F6F2; font-family:Arial,Helvetica,sans-serif; font-weight:800; }
+      .mp-sub     { fill:#A0AAB0; font-family:Arial,Helvetica,sans-serif; font-weight:600; }
+      .mp-tag     { fill:#808B91; font-family:Arial,Helvetica,sans-serif; font-weight:600; }
+    </style>
+  </defs>
+
+  <!-- Card background -->
+  <rect x="8" y="8" width="572" height="400" rx="30" fill="#1A252B"/>
+
+  <!-- ===== Globe icon ===== -->
+  <!-- grid lines in blue-gray (drawn first, underneath) -->
+  <g fill="none" stroke="#5F6C75" stroke-width="1.6">
+    <line x1="146" y1="76" x2="146" y2="218"/>
+    <ellipse cx="146" cy="147" rx="24" ry="71"/>
+    <ellipse cx="146" cy="147" rx="48" ry="71"/>
+    <line x1="75" y1="147" x2="217" y2="147"/>
+    <ellipse cx="146" cy="147" rx="71" ry="24"/>
+    <ellipse cx="146" cy="147" rx="71" ry="48"/>
+  </g>
+  <!-- outer sphere in gold (drawn last, on top) -->
+  <circle cx="146" cy="147" r="71" fill="none" stroke="#CA8D4F" stroke-width="2.8"/>
+
+  <!-- ===== Orbit arc + dot (gold) ===== -->
+  <path d="M 82 188 A 125 46 -35 0 1 208 90" fill="none" stroke="#CA8D4F" stroke-width="3.2" stroke-linecap="round"/>
+  <circle cx="208" cy="90" r="7" fill="#CA8D4F"/>
+
+  <!-- ===== Wordmark ===== -->
+  <text class="mp-primary" x="61" y="308" font-size="66" letter-spacing="-1">MaPa</text>
+
+  <!-- Separator -->
+  <rect x="62" y="320" width="196" height="2.6" rx="1.3" fill="#CA8D4F"/>
+
+  <!-- Subtitle -->
+  <text class="mp-sub" x="63" y="353" font-size="15.5" letter-spacing="3.4">OPERATIONS · TURNAROUND · INTERIM</text>
+
+  <!-- Tagline -->
+  <text class="mp-tag" x="64" y="379" font-size="12.5" letter-spacing="3">DE · PL · RO · TN · BE · VAE</text>
+</svg>

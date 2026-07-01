@@ -1,26 +1,29 @@
 <template>
 	<div class="home-content">
 		<div class="home-text">
-			<p class="home-greeting">{{ t("home.greeting") }}</p>
+			<img src="/mapa-logo-card.svg" alt="MaPa Consulting" class="home-logo" />
+			<p class="home-eyebrow">{{ t("home.greeting") }}</p>
 			<h1 class="home-name">{{ t("home.name") }}</h1>
 			<p class="home-roles">{{ t("home.roles") }}</p>
-			<p class="home-subtitle">{{ t("home.subtitle") }}</p>
 			<p class="home-description">{{ t("home.description") }}</p>
-			<div class="desktop-cta">
-				<CtaButton icon="i-heroicons-user-circle" @click="scrollToAbout">
+			<div class="home-cta">
+				<CtaButton icon="i-heroicons-envelope" @click="scrollToContact">
 					{{ t("home.cta") }}
 				</CtaButton>
+				<button class="cta-secondary" @click="scrollToContact">
+					{{ t("home.ctaSecondary") }}
+				</button>
 			</div>
 		</div>
 
 		<div class="home-image">
 			<NuxtImg
-				src="/assets/img/portrait_bg.png"
+				src="/assets/img/portrait_tranparent.png"
 				alt="Mario Pape"
 				width="726"
 				height="1090"
 				format="webp"
-				quality="75"
+				quality="85"
 				densities="1"
 				class="portrait"
 				fetchpriority="high"
@@ -32,7 +35,7 @@
 
 <script setup lang="ts">
 	const { t } = useI18n();
-	const { scrollToAbout } = useScrollTo();
+	const { scrollToContact } = useScrollTo();
 </script>
 
 <style scoped>
@@ -41,8 +44,8 @@
 		grid-template-columns: 1fr auto;
 		gap: 2rem;
 		align-items: center;
-		margin-top: 3rem;
-		margin-bottom: 3rem;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
 		max-width: 1200px;
 		margin-left: auto;
 		margin-right: auto;
@@ -54,10 +57,19 @@
 		gap: 0.75rem;
 	}
 
-	.home-greeting {
-		font-size: 1.25rem;
-		color: var(--color-text);
-		font-weight: 400;
+	.home-logo {
+		width: 100%;
+		max-width: 520px;
+		height: auto;
+		margin-bottom: 1.25rem;
+	}
+
+	.home-eyebrow {
+		font-size: 0.8rem;
+		font-weight: 600;
+		letter-spacing: 0.15em;
+		color: var(--color-primary);
+		text-transform: uppercase;
 		margin: 0;
 	}
 
@@ -75,13 +87,6 @@
 		font-weight: 600;
 		margin: 0;
 		margin-bottom: 0.5rem;
-	}
-
-	.home-subtitle {
-		font-size: 1.25rem;
-		color: var(--color-text);
-		font-weight: 500;
-		margin: 0;
 	}
 
 	.home-description {
@@ -105,8 +110,30 @@
 		border-radius: 2rem;
 	}
 
-	.desktop-cta {
-		display: block;
+	.home-cta {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		flex-wrap: wrap;
+		margin-top: 0.5rem;
+	}
+
+	.cta-secondary {
+		font-size: 0.95rem;
+		font-weight: 500;
+		color: var(--color-primary);
+		background: transparent;
+		border: 2px solid var(--color-primary);
+		border-radius: 0.5rem;
+		padding: 0.6rem 1.25rem;
+		cursor: pointer;
+		transition: background 0.2s ease, color 0.2s ease;
+		white-space: nowrap;
+	}
+
+	.cta-secondary:hover {
+		background: var(--color-primary);
+		color: #ffffff;
 	}
 
 	@media (max-width: 768px) {
@@ -126,10 +153,6 @@
 
 		.portrait {
 			max-width: 300px;
-		}
-
-		.desktop-cta {
-			display: none;
 		}
 	}
 </style>

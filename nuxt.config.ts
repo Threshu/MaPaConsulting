@@ -54,6 +54,16 @@ export default defineNuxtConfig({
     }
   },
 
+  icon: {
+    clientBundle: {
+      icons: [
+        'circle-flags:de',
+        'circle-flags:gb',
+        'circle-flags:pl',
+      ]
+    }
+  },
+
   i18n: {
     defaultLocale: 'de',
     strategy: 'prefix',
@@ -104,8 +114,8 @@ export default defineNuxtConfig({
         { rel: 'manifest', href: '/site.webmanifest' },
       ],
       meta: [
-        { name: 'theme-color', content: '#1a4b84' },
-        { name: 'msapplication-TileColor', content: '#1a4b84' }
+        { name: 'theme-color', content: '#1A252B' },
+        { name: 'msapplication-TileColor', content: '#1A252B' }
       ]
     }
   }

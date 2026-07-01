@@ -5,12 +5,7 @@
 			size="lg"
 			:modal="false"
 			:content="{ side: 'left' }"
-			:ui="{
-				content: 'w-52 bg-white/95 backdrop-blur-sm',
-				item: 'hover:bg-primary/10 p-3 text-base flex items-center',
-				itemLeadingIcon: 'size-8 rounded-full ring-2 ring-[var(--color-title)]',
-				itemLabel: 'text-[var(--color-title)] font-medium',
-			}"
+			:ui="dropdownUi"
 		>
 			<UButton
 				:icon="currentFlagIcon"
@@ -19,8 +14,8 @@
 				size="xl"
 				:aria-label="t('accessibility.changeLanguage')"
 				:ui="{
-					base: 'bg-transparent hover:bg-white/10 active:bg-white/10',
-					leadingIcon: 'size-10 rounded-full ring-2 ring-[var(--color-title)]',
+					base: 'bg-transparent hover:bg-[#CA8D4F]/10 active:bg-[#CA8D4F]/10',
+					leadingIcon: 'size-10 rounded-full ring-2 ring-[#CA8D4F]',
 				}"
 			/>
 		</UDropdownMenu>
@@ -31,6 +26,7 @@
 	import type { DropdownMenuItem } from "@nuxt/ui";
 
 	const { t, locale, setLocale } = useI18n();
+	const { isDark } = useTheme();
 
 	const languages = [
 		{ code: "de", name: "Deutsch", icon: "i-circle-flags-de" },
@@ -50,13 +46,20 @@
 			onSelect: () => setLocale(lang.code as "de" | "en" | "pl"),
 		}))
 	);
+
+	const dropdownUi = computed(() => ({
+		content: isDark.value
+			? 'w-52 bg-[#1A252B]/95 backdrop-blur-sm border border-[#2E3D46]'
+			: 'w-52 bg-white/95 backdrop-blur-sm border border-[#DAD6CC]',
+		item: 'hover:bg-[#CA8D4F]/10 p-3 text-base flex items-center',
+		itemLeadingIcon: 'size-8 rounded-full ring-2 ring-[#CA8D4F]',
+		itemLabel: isDark.value ? 'text-[#F8F6F2] font-medium' : 'text-[#1A252B] font-medium',
+	}));
 </script>
 
 <style scoped>
 	.language-switcher {
-		position: absolute;
-		top: 1rem;
-		right: 1rem;
-		z-index: 1000;
+		display: flex;
+		align-items: center;
 	}
 </style>

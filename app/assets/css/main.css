@@ -8,25 +8,42 @@
 
 /*=============== CSS VARIABLES ===============*/
 :root {
-    /* Brand Colors - using Tailwind primary */
-    --color-primary: #1a4b84;
-    
+    /* Brand Colors */
+    --color-primary: #CA8D4F;
+    --color-primary-hover: #B67C41;
+    --color-primary-soft: #E0B989;
+    --color-navy: #1A252B;
+
     /* Nuxt UI Color Override */
-    --ui-primary: oklch(from #1a4b84 l c h);
-    
+    --ui-primary: oklch(from #CA8D4F l c h);
+
     /* Container Width */
     --ui-container: var(--container-8xl);
-    
+
     /* Typography */
     --font-family: 'Poppins', sans-serif;
-    
+
     /* Neutral Colors */
-    --color-title: #2b2b2b;
-    --color-text: #4a4a4a;
-    --color-body-bg: #f0f0f0;
-    --color-section-bg: #ffffff;
-    --color-box-bg: #ffffff;
-    --color-border: #e5e5e5;
+    --color-title: #F8F6F2;
+    --color-text: #A0AAB0;
+    --color-text-subtle: #808B91;
+    --color-body-bg: #141E24;
+    --color-section-bg: #1A252B;
+    --color-box-bg: #223038;
+    --color-border: #2E3D46;
+    --color-border-strong: #415158;
+}
+
+/*=============== LIGHT THEME OVERRIDE ===============*/
+[data-theme="light"] {
+    --color-title: #1A252B;
+    --color-text: #55606A;
+    --color-text-subtle: #808B91;
+    --color-body-bg: #F7F5F0;
+    --color-section-bg: #FFFFFF;
+    --color-box-bg: #FFFFFF;
+    --color-border: #DAD6CC;
+    --color-border-strong: #B9B4A8;
 }
 
 /*=============== BASE STYLES ===============*/
@@ -49,7 +66,7 @@ body {
 
 /*=============== TOAST CUSTOM STYLES ===============*/
 [data-slot="base"][role="alert"] {
-    background-color: #1a4b84 !important;
+    background-color: #2E3D46 !important;
 }
 
 [data-slot="base"][role="alert"] [data-slot="title"],

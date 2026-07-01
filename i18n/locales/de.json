@@ -1,15 +1,15 @@
 {
   "meta": {
-    "title": "MaPa Consulting",
-    "description": "Unternehmensberatung für operative Exzellenz, Prozessoptimierung und KI-Implementierung"
+    "title": "Mario Pape – Interim COO, Geschäftsführer & Werkleiter | Turnaround & Restrukturierung",
+    "description": "Interim-Manager für produzierende Unternehmen: Turnaround, Restrukturierung, LEAN/Kaizen, ERP & Digitalisierung. 30+ Jahre, 7 Länder, sofort verfügbar. Schwerpunkt Möbel, Holz, Maschinenbau."
   },
   "home": {
-    "greeting": "Hallo, ich bin",
+    "greeting": "INTERIM MANAGEMENT",
     "name": "Mario Pape",
-    "roles": "Managing Director {'|'} COO {'|'} CTO {'|'} Interim Manager",
-    "subtitle": "Zertifizierter KI-Manager & Consultant",
-    "description": "Mit 30 Jahren internationaler Erfahrung spezialisiert auf operative Exzellenz, Restrukturierung, Prozessoptimierung und KI-Implementierung.",
-    "cta": "Über mich",
+    "roles": "Interim COO · Geschäftsführer · Werkleiter",
+    "description": "Turnaround, Restrukturierung und operative Exzellenz für produzierende Unternehmen — Möbel, Holz, Polster, Maschinen- und Anlagenbau. 30+ Jahre, 7 Länder, sofort verfügbar.",
+    "cta": "Verfügbarkeit anfragen",
+    "ctaSecondary": "Profil / CV anfordern",
     "contactInfo": {
       "phone": "Telefon",
       "phoneValue": "+49 175 9030149",
@@ -26,64 +26,66 @@
     "slides": {
       "aboutMe": {
         "title": "Über mich",
-        "intro": "MaPa Consulting ist auf operative Exzellenz durch Restrukturierung, Prozessoptimierung, Führungsstrategien und KI spezialisiert. Mit umfassender Erfahrung in der Leitung und Transformation von Produktionsunternehmen biete ich maßgeschneiderte Lösungen, die nachhaltige Ergebnisse liefern.",
-        "expertise": "Mein Know-how umfasst LEAN-Management, JIT-Produktion, Qualitätsmanagement, Industrie 4.0, ERP- und KI Implementierung, um Unternehmen für zukünftige Herausforderungen wettbewerbsfähig aufzustellen.",
-        "approach": "Ich setze auf eine praxisnahe, umsetzungsorientierte Arbeitsweise, um messbare Verbesserungen zu erzielen, Kosten zu senken und den langfristigen Erfolg meiner Kunden zu sichern."
+        "intro": "Als Interim-Manager übernehme ich operative Führungsverantwortung in anspruchsvollen Situationen — vom Turnaround über die Restrukturierung bis zur Sanierung in Eigenverwaltung. In über 30 Jahren habe ich als COO, Geschäftsführer und Werkleiter Produktionsbetriebe in Deutschland, Polen, Rumänien, Tunesien, Belgien und den VAE geführt und profitabel gemacht.",
+        "expertise": "Mein Ansatz ist hands-on und ergebnisorientiert: Ich gehe auf den Shopfloor, stabilisiere Liquidität und Lieferfähigkeit, richte Prozesse mit LEAN/Kaizen neu aus und baue belastbare Strukturen, die auch nach dem Mandat tragen. Branchenanker ist die Möbel-, Polster- und Holzindustrie sowie der Maschinen- und Anlagenbau.",
+        "approach": "Zertifizierter KI- und Kaizen-Manager · REFA-Spezialist · mehrfach Prokura · hohe Reisebereitschaft · sofort verfügbar."
       },
       "services": {
         "title": "Leistungen",
-        "intro": "Ich biete strategische Beratung auch im Bereich der Künstliche Intelligenz und als Interim Manager eine praxisnahe Umsetzung in den folgenden Bereichen:"
+        "intro": "Als Interim-Manager begleite ich Unternehmen in folgenden Bereichen:"
       },
       "projects": {
-        "title": "Projekte"
+        "title": "Ergebnisse"
       }
     }
   },
   "services": {
     "items": [
-      {
-        "title": "Operative & Produktionsverantwortung"
-      },
-      {
-        "title": "Strategieentwicklung & Umsetzung"
-      },
-      {
-        "title": "Qualitätsmanagement & Prozessoptimierung"
-      },
-      {
-        "title": "Innovation & Produktentwicklung"
-      },
-      {
-        "title": "KI-Einsatzmöglichkeiten & Umsetzung"
-      }
+      { "title": "Interim COO / Geschäftsführung / Werkleitung" },
+      { "title": "Turnaround & Restrukturierung (inkl. Eigenverwaltungs- und Sanierungsumfeld)" },
+      { "title": "LEAN / Kaizen / Prozessoptimierung" },
+      { "title": "ERP-Einführung & Digitalisierung (Microsoft Dynamics 365, Industrie 4.0, KI)" },
+      { "title": "Multi-Site- & Multi-Country-Operations mit voller P&L-Verantwortung" },
+      { "title": "Einkauf, Supply Chain & internationales Sourcing (Asien)" }
     ]
   },
   "projects": {
+    "labels": {
+      "situation": "Ausgangslage",
+      "action": "Maßnahme",
+      "result": "Ergebnis"
+    },
     "items": [
       {
-        "title": "Internationale Produktionsstandorte"
+        "title": "Turnaround in 18 Monaten",
+        "situation": "Defizitärer Produktionsstandort mit Restrukturierungsbedarf in Technik, Betrieb, Einkauf und Logistik.",
+        "action": "Vollständige operative Neuaufstellung als Werkleiter (Prokura); Kostenstrukturen und Prozesse konsequent umgebaut.",
+        "result": "+70 % Ergebnisverbesserung in 3 Monaten, Profitabilität innerhalb von 18 Monaten."
       },
       {
-        "title": "Produktionsverlagerung"
+        "title": "Drei Länder, eine P&L",
+        "situation": "Simultane operative Verantwortung für drei internationale Standorte (Polen, Rumänien, Tunesien).",
+        "action": "Volle P&L-Steuerung, LEAN/Kaizen-Transformation, konzernweite KPI-Systeme, Führung der Landesleiter.",
+        "result": "Materialeffizienz −2–7 % je Standort, 98 FTE optimiert, Einkauf −10 %, Logistik −7 %."
       },
       {
-        "title": "LEAN & JIT Optimierung"
+        "title": "ERP & Industrie 4.0",
+        "situation": "Heterogene IT- und Produktionsplanung bei einem Möbelhersteller; Vorbereitung auf Industrie 4.0.",
+        "action": "Einführung Microsoft Dynamics 365 inkl. MRP/Produktionsplanung; strategische Weiterentwicklung der Betriebsinfrastruktur.",
+        "result": "Durchgängige Planung von Auftrag bis Fertigung, skalierbare Strukturen, belastbares Digitalisierungsfundament."
       },
       {
-        "title": "Industrie 4.0 Digitalisierung"
-      },
-      {
-        "title": "Greenfieldplanung"
-      },
-      {
-        "title": "Qualitätsmanagementsystem"
+        "title": "Restrukturierung im inhabergeführten Mittelstand",
+        "situation": "Inhabergeführter Polstermöbelhersteller mit operativem und kommerziellem Handlungsbedarf.",
+        "action": "Interim-Geschäftsführung; operative und kaufmännische Restrukturierung in enger Abstimmung mit den Gesellschaftern.",
+        "result": "Stabilisierter Geschäftsbetrieb und neu ausgerichtete Strukturen."
       }
     ]
   },
   "contact": {
     "title": "Kontakt",
     "button": "Kontakt",
-    "description": "Nehmen Sie Kontakt auf für ein unverbindliches Erstgespräch zu Ihren individuellen Herausforderungen.",
+    "description": "Sofort verfügbar für Interim-Mandate in DACH und international. Lassen Sie uns in einem unverbindlichen Erstgespräch über Ihre Situation sprechen.",
     "emailTitle": "E-Mail",
     "phoneTitle": "Telefon",
     "addressTitle": "Adresse",

@@ -1,15 +1,15 @@
 {
   "meta": {
-    "title": "MaPa Consulting",
-    "description": "Consulting services for operational excellence, process optimization and AI implementation"
+    "title": "Mario Pape – Interim COO, Managing Director & Plant Director | Turnaround & Restructuring",
+    "description": "Interim manager for manufacturing companies: turnaround, restructuring, LEAN/Kaizen, ERP & digitalisation. 30+ years, 7 countries, available immediately. Focus on furniture, wood and machinery."
   },
   "home": {
-    "greeting": "Hello, I'm",
+    "greeting": "INTERIM MANAGEMENT",
     "name": "Mario Pape",
-    "roles": "Managing Director {'|'} COO {'|'} CTO {'|'} Interim Manager",
-    "subtitle": "Certified AI Manager & Consultant",
-    "description": "With 30 years of international experience specializing in operational excellence, restructuring, process optimization, and AI implementation.",
-    "cta": "About Me",
+    "roles": "Interim COO · Managing Director · Plant Director",
+    "description": "Turnaround, restructuring and operational excellence for manufacturing companies — furniture, wood, upholstery, machinery and plant engineering. 30+ years, 7 countries, available immediately.",
+    "cta": "Check availability",
+    "ctaSecondary": "Request profile / CV",
     "contactInfo": {
       "phone": "Phone",
       "phoneValue": "+49 175 9030149",
@@ -26,64 +26,66 @@
     "slides": {
       "aboutMe": {
         "title": "About Me",
-        "intro": "MaPa Consulting specializes in operational excellence through restructuring, process optimization, leadership strategies, and AI. With extensive experience in managing and transforming manufacturing companies, I offer customized solutions that deliver sustainable results.",
-        "expertise": "My expertise includes LEAN management, JIT production, quality management, Industry 4.0, ERP, and AI implementation to position companies competitively for future challenges.",
-        "approach": "I rely on a practical, implementation-oriented approach to achieve measurable improvements, reduce costs, and ensure the long-term success of my clients."
+        "intro": "As an interim manager, I take on operational leadership in demanding situations — from turnaround and restructuring to reorganisation under self-administration. Over more than 30 years I have led and returned manufacturing operations to profitability as COO, Managing Director and Plant Director across Germany, Poland, Romania, Tunisia, Belgium and the UAE.",
+        "expertise": "My approach is hands-on and results-driven: I go to the shop floor, stabilise liquidity and delivery capability, redesign processes with LEAN/Kaizen, and build robust structures that hold long after the mandate ends. My industry anchor is furniture, upholstery and wood, as well as machinery and plant engineering.",
+        "approach": "Certified AI and Kaizen Manager · REFA specialist · repeatedly granted Prokura (statutory signing authority) · high mobility · available immediately."
       },
       "services": {
         "title": "Services",
-        "intro": "I offer strategic consulting in the field of artificial intelligence and, as an interim manager, practical implementation in the following areas:"
+        "intro": "As an interim manager, I support companies in the following areas:"
       },
       "projects": {
-        "title": "Projects"
+        "title": "Results"
       }
     }
   },
   "services": {
     "items": [
-      {
-        "title": "Operational & Production Responsibility"
-      },
-      {
-        "title": "Strategy Development & Implementation"
-      },
-      {
-        "title": "Quality Management & Process Optimization"
-      },
-      {
-        "title": "Innovation & Product Development"
-      },
-      {
-        "title": "AI Applications & Implementation"
-      }
+      { "title": "Interim COO / Managing Director / Plant Director" },
+      { "title": "Turnaround & restructuring (incl. self-administration and restructuring environments)" },
+      { "title": "LEAN / Kaizen / process optimisation" },
+      { "title": "ERP implementation & digitalisation (Microsoft Dynamics 365, Industry 4.0, AI)" },
+      { "title": "Multi-site & multi-country operations with full P&L responsibility" },
+      { "title": "Procurement, supply chain & international sourcing (Asia)" }
     ]
   },
   "projects": {
+    "labels": {
+      "situation": "Situation",
+      "action": "Action",
+      "result": "Result"
+    },
     "items": [
       {
-        "title": "International Production Sites"
+        "title": "Turnaround in 18 months",
+        "situation": "A loss-making production site requiring restructuring across engineering, operations, procurement and logistics.",
+        "action": "Full operational realignment as Plant Director (with Prokura); cost structures and processes rebuilt decisively.",
+        "result": "+70% earnings improvement in 3 months, profitability within 18 months."
       },
       {
-        "title": "Production Relocation"
+        "title": "Three countries, one P&L",
+        "situation": "Simultaneous operational responsibility for three international sites (Poland, Romania, Tunisia).",
+        "action": "Full P&L steering, LEAN/Kaizen transformation, group-wide KPI systems, leadership of country managers.",
+        "result": "Material efficiency −2–7% per site, 98 FTE optimised, procurement −10%, logistics −7%."
       },
       {
-        "title": "LEAN & JIT Optimization"
+        "title": "ERP & Industry 4.0",
+        "situation": "Heterogeneous IT and production planning at a furniture manufacturer; preparation for Industry 4.0.",
+        "action": "Implementation of Microsoft Dynamics 365 incl. MRP/production planning; strategic development of operational infrastructure.",
+        "result": "End-to-end planning from order to production, scalable structures, a solid foundation for digitalisation."
       },
       {
-        "title": "Industry 4.0 Digitalization"
-      },
-      {
-        "title": "Greenfield Planning"
-      },
-      {
-        "title": "Quality Management System"
+        "title": "Restructuring in an owner-managed SME",
+        "situation": "An owner-managed upholstered furniture manufacturer with operational and commercial need for action.",
+        "action": "Interim management; operational and commercial restructuring in close coordination with the shareholders.",
+        "result": "Stabilised operations and realigned structures."
       }
     ]
   },
   "contact": {
     "title": "Contact",
     "button": "Contact",
-    "description": "Get in touch to schedule a non-binding initial consultation about your individual challenges.",
+    "description": "Available immediately for interim mandates in the DACH region and internationally. Let's discuss your situation in a non-binding initial conversation.",
     "emailTitle": "Email",
     "phoneTitle": "Phone",
     "addressTitle": "Address",
@@ -152,7 +154,7 @@
     },
     "company": {
       "title": "Information according to § 5 Digital Services Act (DDG)",
-      "content": "<strong>MaPa Business Consulting</strong><br>Owner: Mario Pape<br>Lindenstraße 2<br>97839 Esselbach<br>Germany"
+      "content": "<strong>MaPa-Unternehmensberatung</strong><br>Owner: Mario Pape<br>Lindenstraße 2<br>97839 Esselbach<br>Germany"
     },
     "contact": {
       "title": "Contact",
@@ -164,7 +166,7 @@
     },
     "activity": {
       "title": "Business Activity",
-      "content": "MaPa Business Consulting provides consulting and interim management services.<br>Activities are conducted nationally and internationally."
+      "content": "MaPa-Unternehmensberatung provides consulting and interim management services.<br>Activities are conducted nationally and internationally."
     },
     "responsible": {
       "title": "Responsible for content according to § 18 Para. 2 MStV",

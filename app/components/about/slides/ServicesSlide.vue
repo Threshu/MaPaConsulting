@@ -29,7 +29,7 @@
 			titleKey: "services.items.0.title",
 		},
 		{
-			icon: "i-heroicons-chart-bar",
+			icon: "i-heroicons-arrow-trending-up",
 			titleKey: "services.items.1.title",
 		},
 		{
@@ -37,12 +37,16 @@
 			titleKey: "services.items.2.title",
 		},
 		{
-			icon: "i-heroicons-light-bulb",
+			icon: "i-heroicons-computer-desktop",
 			titleKey: "services.items.3.title",
 		},
 		{
-			icon: "i-heroicons-cpu-chip",
+			icon: "i-heroicons-globe-alt",
 			titleKey: "services.items.4.title",
+		},
+		{
+			icon: "i-heroicons-truck",
+			titleKey: "services.items.5.title",
 		},
 	];
 </script>
@@ -92,7 +96,7 @@
 
 	.services-grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		grid-template-columns: repeat(3, 1fr);
 		gap: 1.5rem;
 		margin-top: 1rem;
 	}

@@ -5,7 +5,7 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#1a4b84',
+          DEFAULT: '#CA8D4F',
         },
       },
       fontFamily: {

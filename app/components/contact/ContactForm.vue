@@ -103,9 +103,9 @@
 	.contact-form :deep(input),
 	.contact-form :deep(textarea) {
 		font-size: 1.0625rem;
-		background-color: white;
+		background-color: var(--color-body-bg);
 		border: 1px solid var(--color-border);
-		color: var(--color-text);
+		color: var(--color-title);
 	}
 
 	.contact-form :deep(.text-error) {

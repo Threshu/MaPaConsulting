@@ -1,15 +1,15 @@
 {
   "meta": {
-    "title": "MaPa Consulting",
-    "description": "Doradztwo w zakresie doskonałości operacyjnej, optymalizacji procesów i wdrażania AI"
+    "title": "Mario Pape – Interim COO, Dyrektor Zarządzający i Kierownik Zakładu | Turnaround i Restrukturyzacja",
+    "description": "Interim manager dla firm produkcyjnych: turnaround, restrukturyzacja, LEAN/Kaizen, ERP i digitalizacja. Ponad 30 lat, 7 krajów, dostępność natychmiastowa. Specjalizacja: meble, drewno, budowa maszyn."
   },
   "home": {
-    "greeting": "Cześć, jestem",
+    "greeting": "INTERIM MANAGEMENT",
     "name": "Mario Pape",
-    "roles": "Dyrektor Zarządzający {'|'} COO {'|'} CTO {'|'} Interim Manager",
-    "subtitle": "Certyfikowany Manager AI & Konsultant",
-    "description": "Z 30-letnim międzynarodowym doświadczeniem specjalizującym się w doskonałości operacyjnej, restrukturyzacji, optymalizacji procesów i wdrażaniu AI.",
-    "cta": "O mnie",
+    "roles": "Interim COO · Dyrektor Zarządzający · Kierownik Zakładu",
+    "description": "Turnaround, restrukturyzacja i doskonałość operacyjna dla firm produkcyjnych — meble, drewno, tapicerka, budowa maszyn i urządzeń. Ponad 30 lat, 7 krajów, dostępność natychmiastowa.",
+    "cta": "Zapytaj o dostępność",
+    "ctaSecondary": "Poproś o profil / CV",
     "contactInfo": {
       "phone": "Telefon",
       "phoneValue": "+49 175 9030149",
@@ -26,64 +26,66 @@
     "slides": {
       "aboutMe": {
         "title": "O mnie",
-        "intro": "MaPa Consulting specjalizuje się w doskonałości operacyjnej poprzez restrukturyzację, optymalizację procesów, strategie przywództwa i AI. Z bogatym doświadczeniem w zarządzaniu i transformacji firm produkcyjnych, oferuję niestandardowe rozwiązania, które zapewniają trwałe wyniki.",
-        "expertise": "Moja wiedza obejmuje zarządzanie LEAN, produkcję JIT, zarządzanie jakością, Przemysł 4.0, ERP i wdrażanie AI, aby pozycjonować firmy konkurencyjnie wobec przyszłych wyzwań.",
-        "approach": "Stawiam na praktyczne, zorientowane na wdrożenie podejście, aby osiągać wymierne poprawy, obniżać koszty i zapewniać długoterminowy sukces moich klientów."
+        "intro": "Jako interim manager przejmuję operacyjną odpowiedzialność kierowniczą w wymagających sytuacjach — od turnaround, przez restrukturyzację, po sanację w zarządzie własnym (Eigenverwaltung). Przez ponad 30 lat kierowałem zakładami produkcyjnymi jako COO, dyrektor zarządzający i kierownik zakładu w Niemczech, Polsce, Rumunii, Tunezji, Belgii i ZEA, doprowadzając je do rentowności.",
+        "expertise": "Moje podejście jest praktyczne i zorientowane na wyniki: jestem obecny na hali produkcyjnej, stabilizuję płynność i zdolność dostaw, przeprojektowuję procesy w oparciu o LEAN/Kaizen oraz buduję trwałe struktury, które działają również po zakończeniu mandatu. Specjalizuję się w branży meblowej, tapicerskiej i drzewnej oraz w budowie maszyn i urządzeń.",
+        "approach": "Certyfikowany menedżer AI i Kaizen · specjalista REFA · wielokrotnie prokurent · wysoka gotowość do podróży · dostępność natychmiastowa."
       },
       "services": {
         "title": "Usługi",
-        "intro": "Oferuję strategiczne doradztwo w dziedzinie sztucznej inteligencji i jako interim manager praktyczne wdrożenie w następujących obszarach:"
+        "intro": "Jako interim manager wspieram firmy w następujących obszarach:"
       },
       "projects": {
-        "title": "Projekty"
+        "title": "Wyniki"
       }
     }
   },
   "services": {
     "items": [
-      {
-        "title": "Odpowiedzialność operacyjna i produkcyjna"
-      },
-      {
-        "title": "Rozwój i wdrażanie strategii"
-      },
-      {
-        "title": "Zarządzanie jakością i optymalizacja procesów"
-      },
-      {
-        "title": "Innowacje i rozwój produktów"
-      },
-      {
-        "title": "Zastosowania i wdrażanie AI"
-      }
+      { "title": "Interim COO / zarządzanie / kierowanie zakładem" },
+      { "title": "Turnaround i restrukturyzacja (w tym otoczenie sanacyjne / zarząd własny)" },
+      { "title": "LEAN / Kaizen / optymalizacja procesów" },
+      { "title": "Wdrożenie ERP i digitalizacja (Microsoft Dynamics 365, Przemysł 4.0, AI)" },
+      { "title": "Operacje wielozakładowe i międzynarodowe z pełną odpowiedzialnością za P&L" },
+      { "title": "Zakupy, łańcuch dostaw i sourcing międzynarodowy (Azja)" }
     ]
   },
   "projects": {
+    "labels": {
+      "situation": "Sytuacja wyjściowa",
+      "action": "Działanie",
+      "result": "Wynik"
+    },
     "items": [
       {
-        "title": "Międzynarodowe zakłady produkcyjne"
+        "title": "Turnaround w 18 miesięcy",
+        "situation": "Deficytowy zakład produkcyjny wymagający restrukturyzacji w obszarach techniki, produkcji, zakupów i logistyki.",
+        "action": "Pełna reorganizacja operacyjna jako kierownik zakładu (prokurent); konsekwentna przebudowa struktur kosztowych i procesów.",
+        "result": "+70% poprawy wyniku w 3 miesiące, rentowność w ciągu 18 miesięcy."
       },
       {
-        "title": "Przeniesienie produkcji"
+        "title": "Trzy kraje, jeden P&L",
+        "situation": "Jednoczesna odpowiedzialność operacyjna za trzy zakłady międzynarodowe (Polska, Rumunia, Tunezja).",
+        "action": "Pełne sterowanie P&L, transformacja LEAN/Kaizen, ogólnokoncernowe systemy KPI, kierowanie dyrektorami krajowymi.",
+        "result": "Efektywność materiałowa −2–7% na zakład, optymalizacja 98 etatów, zakupy −10%, logistyka −7%."
       },
       {
-        "title": "Optymalizacja LEAN i JIT"
+        "title": "ERP i Przemysł 4.0",
+        "situation": "Niejednorodne IT i planowanie produkcji u producenta mebli; przygotowanie do Przemysłu 4.0.",
+        "action": "Wdrożenie Microsoft Dynamics 365 wraz z MRP/planowaniem produkcji; strategiczny rozwój infrastruktury operacyjnej.",
+        "result": "Spójne planowanie od zamówienia po produkcję, skalowalne struktury, solidny fundament pod digitalizację."
       },
       {
-        "title": "Digitalizacja Przemysł 4.0"
-      },
-      {
-        "title": "Planowanie Greenfield"
-      },
-      {
-        "title": "System zarządzania jakością"
+        "title": "Restrukturyzacja w firmie rodzinnej",
+        "situation": "Rodzinny producent mebli tapicerowanych z potrzebą działań operacyjnych i handlowych.",
+        "action": "Zarządzanie interim; restrukturyzacja operacyjna i handlowa w ścisłej współpracy z właścicielami.",
+        "result": "Ustabilizowana działalność i nowo ukierunkowane struktury."
       }
     ]
   },
   "contact": {
     "title": "Kontakt",
     "button": "Kontakt",
-    "description": "Skontaktuj się, aby umówić wstępną rozmowę na temat Twoich wyzwań.",
+    "description": "Dostępny od zaraz do mandatów interim w regionie DACH i międzynarodowo. Porozmawiajmy o Państwa sytuacji podczas niezobowiązującej rozmowy wstępnej.",
     "emailTitle": "E-mail",
     "phoneTitle": "Telefon",
     "addressTitle": "Adres",
@@ -152,7 +154,7 @@
     },
     "company": {
       "title": "Informacje zgodnie z § 5 Ustawy o Usługach Cyfrowych (DDG)",
-      "content": "<strong>MaPa Doradztwo Biznesowe</strong><br>Właściciel: Mario Pape<br>Lindenstraße 2<br>97839 Esselbach<br>Niemcy"
+      "content": "<strong>MaPa-Unternehmensberatung</strong><br>Właściciel: Mario Pape<br>Lindenstraße 2<br>97839 Esselbach<br>Niemcy"
     },
     "contact": {
       "title": "Kontakt",
@@ -164,7 +166,7 @@
     },
     "activity": {
       "title": "Działalność",
-      "content": "MaPa Doradztwo Biznesowe świadczy usługi doradcze i interim management.<br>Działalność prowadzona jest na poziomie krajowym i międzynarodowym."
+      "content": "MaPa-Unternehmensberatung świadczy usługi doradcze i interim management.<br>Działalność prowadzona jest na poziomie krajowym i międzynarodowym."
     },
     "responsible": {
       "title": "Odpowiedzialny za treść zgodnie z § 18 Ust. 2 MStV",
