@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="60 61 172 172">
+  <rect x="60" y="61" width="172" height="172" rx="22" fill="#1A252B"/>
+  <!-- globe grid -->
+  <g fill="none" stroke="#5F6C75" stroke-width="1.6">
+    <line x1="146" y1="76" x2="146" y2="218"/>
+    <ellipse cx="146" cy="147" rx="24" ry="71"/>
+    <ellipse cx="146" cy="147" rx="48" ry="71"/>
+    <line x1="75" y1="147" x2="217" y2="147"/>
+    <ellipse cx="146" cy="147" rx="71" ry="24"/>
+    <ellipse cx="146" cy="147" rx="71" ry="48"/>
+  </g>
+  <!-- outer sphere -->
+  <circle cx="146" cy="147" r="71" fill="none" stroke="#CA8D4F" stroke-width="2.8"/>
+  <!-- orbit arc + dot -->
+  <path d="M 82 188 A 125 46 -35 0 1 208 90" fill="none" stroke="#CA8D4F" stroke-width="3.2" stroke-linecap="round"/>
+  <circle cx="208" cy="90" r="7" fill="#CA8D4F"/>
+</svg>
