@@ -10,9 +10,9 @@
 				<CtaButton icon="i-heroicons-envelope" @click="scrollToContact">
 					{{ t("home.cta") }}
 				</CtaButton>
-				<button class="cta-secondary" @click="scrollToContact">
+				<a class="cta-secondary" :href="ctaSecondaryHref">
 					{{ t("home.ctaSecondary") }}
-				</button>
+				</a>
 			</div>
 		</div>
 
@@ -36,6 +36,11 @@
 <script setup lang="ts">
 	const { t } = useI18n();
 	const { scrollToContact } = useScrollTo();
+
+	const ctaSecondaryHref = computed(() => {
+		const subject = encodeURIComponent(t("home.ctaSecondarySubject"));
+		return `mailto:info@mapa-unternehmensberatung.de?subject=${subject}`;
+	});
 </script>
 
 <style scoped>

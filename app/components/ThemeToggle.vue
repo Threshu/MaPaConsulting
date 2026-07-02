@@ -21,8 +21,8 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		width: 2.8rem;
-		height: 2.8rem;
+		width: 3rem;
+		height: 3rem;
 		border-radius: 9999px;
 		border: 2px solid #ca8d4f;
 		background: transparent;
