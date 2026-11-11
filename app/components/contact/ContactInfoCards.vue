@@ -10,7 +10,7 @@
 			<div class="contact-info-content">
 				<div class="contact-info-text">
 					<h3 class="contact-info-title">{{ t(card.titleKey) }}</h3>
-					<p class="contact-info-data">{{ t(card.dataKey) }}</p>
+					<p class="contact-info-data">{{ card.data ?? t(card.dataKey!) }}</p>
 				</div>
 				<CtaButton :to="card.link" :target="card.target" :icon="card.icon">
 					{{ t(card.buttonKey) }}
@@ -22,22 +22,24 @@
 
 <script setup lang="ts">
 	const { t } = useI18n();
+	const { address: emailAddress, mailto } = useProtectedEmail();
 
 	interface ContactCard {
 		titleKey: string;
-		dataKey: string;
+		dataKey?: string;
+		data?: string;
 		buttonKey: string;
-		link: string;
+		link?: string;
 		icon: string;
 		target?: string;
 	}
 
-	const contactCards: ContactCard[] = [
+	const contactCards = computed<ContactCard[]>(() => [
 		{
 			titleKey: "contact.emailTitle",
-			dataKey: "contact.info.email",
+			data: emailAddress.value,
 			buttonKey: "contact.writeMe",
-			link: `mailto:${t("contact.info.email")}`,
+			link: mailto(),
 			icon: "i-heroicons-envelope",
 		},
 		{
@@ -51,11 +53,11 @@
 			titleKey: "contact.addressTitle",
 			dataKey: "contact.info.address",
 			buttonKey: "contact.viewLocation",
-			link: "https://maps.google.com/?q=Lindenstraße+2,+97839+Esslebach",
+			link: "https://maps.google.com/?q=Lindenstraße+2,+97839+Esselbach",
 			icon: "i-heroicons-map-pin",
 			target: "_blank",
 		},
-	];
+	]);
 </script>
 
 <style scoped>

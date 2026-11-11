@@ -37,6 +37,7 @@
 
 <script setup lang="ts">
 	const { t } = useI18n();
+	const { address: emailAddress, mailto } = useProtectedEmail();
 
 	interface ContactInfo {
 		icon: string;
@@ -56,8 +57,8 @@
 		{
 			icon: "i-heroicons-envelope",
 			title: t("home.contactInfo.email"),
-			value: t("home.contactInfo.emailValue"),
-			href: `mailto:${t("home.contactInfo.emailValue")}`,
+			value: emailAddress.value,
+			href: mailto(),
 		},
 		{
 			icon: "i-heroicons-map-pin",

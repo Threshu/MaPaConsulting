@@ -18,13 +18,13 @@
 					<!-- Section I -->
 					<section class="legal-section">
 						<h2>{{ t("privacy.section1.title") }}</h2>
-						<p v-html="t('privacy.section1.content')"></p>
+						<p v-html="t('privacy.section1.content', { email: emailHtml })"></p>
 					</section>
 
 					<!-- Section II -->
 					<section class="legal-section">
 						<h2>{{ t("privacy.section2.title") }}</h2>
-						<p v-html="t('privacy.section2.content')"></p>
+						<p v-html="t('privacy.section2.content', { email: emailHtml })"></p>
 					</section>
 
 					<!-- Section III -->
@@ -63,7 +63,7 @@
 					<!-- Section VI -->
 					<section class="legal-section">
 						<h2>{{ t("privacy.section6.title") }}</h2>
-						<div v-for="(item, index) in 5" :key="index" class="subsection">
+						<div v-for="(item, index) in 7" :key="index" class="subsection">
 							<h3>{{ t(`privacy.section6.subsection${index + 1}.title`) }}</h3>
 							<p
 								v-html="t(`privacy.section6.subsection${index + 1}.content`)"
@@ -98,6 +98,7 @@
 
 	const { t } = useI18n();
 	const localePath = useLocalePath();
+	const { html: emailHtml } = useProtectedEmail();
 
 	usePageSeo({
 		title: t("privacy.title"),

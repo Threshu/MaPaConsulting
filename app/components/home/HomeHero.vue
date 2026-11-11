@@ -37,10 +37,10 @@
 	const { t } = useI18n();
 	const { scrollToContact } = useScrollTo();
 
-	const ctaSecondaryHref = computed(() => {
-		const subject = encodeURIComponent(t("home.ctaSecondarySubject"));
-		return `mailto:info@mapa-unternehmensberatung.de?subject=${subject}`;
-	});
+	const { mailto } = useProtectedEmail();
+	const ctaSecondaryHref = computed(() =>
+		mailto(t("home.ctaSecondarySubject")),
+	);
 </script>
 
 <style scoped>

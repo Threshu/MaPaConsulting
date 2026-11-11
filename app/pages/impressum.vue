@@ -22,7 +22,7 @@
 
 					<section class="legal-section">
 						<h2>{{ t("impressum.contact.title") }}</h2>
-						<p v-html="t('impressum.contact.content')"></p>
+						<p v-html="t('impressum.contact.content', { email: emailHtml })"></p>
 					</section>
 
 					<section class="legal-section">
@@ -60,6 +60,7 @@
 
 	const { t } = useI18n();
 	const localePath = useLocalePath();
+	const { html: emailHtml } = useProtectedEmail();
 
 	usePageSeo({
 		title: t("impressum.title"),

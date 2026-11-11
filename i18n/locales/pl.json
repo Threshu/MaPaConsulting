@@ -15,9 +15,8 @@
       "phone": "Telefon",
       "phoneValue": "+49 175 9030149",
       "email": "E-mail",
-      "emailValue": "info{'@'}mapa-unternehmensberatung.de",
       "location": "Lokalizacja",
-      "locationValue": "Esslebach, Niemcy",
+      "locationValue": "Esselbach, Niemcy",
       "linkedin": "LinkedIn",
       "linkedinValue": "Mario Pape"
     }
@@ -94,9 +93,8 @@
     "callMe": "Zadzwoń do mnie",
     "viewLocation": "Zobacz lokalizację",
     "info": {
-      "email": "info{'@'}mapa-unternehmensberatung.de",
       "phone": "+49 175 9030149",
-      "address": "Lindenstraße 2, 97839 Esslebach"
+      "address": "Lindenstraße 2, 97839 Esselbach"
     },
     "form": {
       "name": "Imię i nazwisko",
@@ -110,7 +108,9 @@
         "MISSING_FIELDS": "Proszę wypełnić wszystkie pola.",
         "NOT_CONFIGURED": "Formularz kontaktowy nie jest skonfigurowany. Skontaktuj się z nami bezpośrednio.",
         "SEND_FAILED": "Nie udało się wysłać wiadomości. Spróbuj później.",
-        "UNKNOWN_ERROR": "Wystąpił nieoczekiwany błąd. Spróbuj ponownie."
+        "UNKNOWN_ERROR": "Wystąpił nieoczekiwany błąd. Spróbuj ponownie.",
+        "CAPTCHA_FAILED": "Nie udało się zakończyć weryfikacji bezpieczeństwa. Spróbuj ponownie lub skontaktuj się z nami telefonicznie albo e-mailem.",
+        "FORBIDDEN": "Żądanie zostało odrzucone. Odśwież stronę i spróbuj ponownie."
       },
       "validation": {
         "nameMin": "Imię musi mieć co najmniej 2 znaki",
@@ -159,7 +159,7 @@
     },
     "contact": {
       "title": "Kontakt",
-      "content": "Telefon: +491759030149<br>E-mail: info{'@'}mapa-unternehmensberatung.de"
+      "content": "Telefon: +491759030149<br>E-mail: {email}"
     },
     "tax": {
       "title": "VAT",
@@ -189,11 +189,11 @@
     },
     "section1": {
       "title": "I. Nazwa i adres administratora",
-      "content": "Administratorem w rozumieniu ogólnego rozporządzenia o ochronie danych jest:<br><br><strong>Mario Pape</strong><br>Lindenstraße 2<br>97839 Esselbach<br>+491759030149<br>E-mail: info{'@'}mapa-unternehmensberatung.de<br>Strona: mapa-unternehmensberatung.de"
+      "content": "Administratorem w rozumieniu ogólnego rozporządzenia o ochronie danych jest:<br><br><strong>Mario Pape</strong><br>Lindenstraße 2<br>97839 Esselbach<br>+491759030149<br>E-mail: {email}<br>Strona: mapa-unternehmensberatung.de"
     },
     "section2": {
       "title": "II. Dane inspektora ochrony danych",
-      "content": "Inspektor ochrony danych administratora:<br><br><strong>Mario Pape</strong><br>Lindenstraße 2<br>97839 Esselbach<br>+491759030149<br>E-mail: info{'@'}mapa-unternehmensberatung.de<br>Strona: mapa-unternehmensberatung.de"
+      "content": "Inspektor ochrony danych administratora:<br><br><strong>Mario Pape</strong><br>Lindenstraße 2<br>97839 Esselbach<br>+491759030149<br>E-mail: {email}<br>Strona: mapa-unternehmensberatung.de"
     },
     "section3": {
       "title": "III. Ogólne informacje o przetwarzaniu danych",
@@ -256,7 +256,7 @@
       "title": "VI. Formularz kontaktowy i kontakt e-mail",
       "subsection1": {
         "title": "1. Opis i zakres przetwarzania danych",
-        "content": "Na naszej stronie internetowej dostępny jest formularz kontaktowy, który może być wykorzystany do elektronicznego kontaktu."
+        "content": "Na naszej stronie internetowej dostępny jest formularz kontaktowy, który może być wykorzystany do elektronicznego kontaktu. Dane wprowadzone w formularzu (imię i nazwisko, adres e-mail, temat, wiadomość) są przekazywane do nas. Alternatywnie możliwy jest kontakt za pośrednictwem podanego adresu e-mail. W takim przypadku przechowywane są dane osobowe przekazane wraz z wiadomością e-mail."
       },
       "subsection2": {
         "title": "2. Podstawa prawna przetwarzania danych",
@@ -273,6 +273,14 @@
       "subsection5": {
         "title": "5. Możliwość sprzeciwu i usunięcia",
         "content": "Użytkownik ma możliwość cofnięcia zgody na przetwarzanie danych osobowych w dowolnym momencie."
+      },
+      "subsection6": {
+        "title": "6. Doręczanie za pośrednictwem Formspree",
+        "content": "Wiadomości z formularza kontaktowego są doręczane na naszą skrzynkę e-mail za pośrednictwem usługi Formspree (Formspree, Inc., USA). W tym celu wprowadzone przez Ciebie dane są przekazywane do Formspree i przetwarzane tam wyłącznie w celu doręczenia. Nie można wykluczyć przetwarzania danych w USA. Podstawą prawną jest Twoja zgoda wyrażona przed wysłaniem formularza (art. 6 ust. 1 lit. a RODO).<br><br>Więcej informacji znajdziesz w <a href=\"https://formspree.io/legal/privacy-policy\" target=\"_blank\" rel=\"noopener\">polityce prywatności Formspree</a>."
+      },
+      "subsection7": {
+        "title": "7. Ochrona przed spamem (Cloudflare Turnstile)",
+        "content": "Aby chronić formularz kontaktowy przed automatycznymi zapytaniami (spamem), stosujemy kilka zabezpieczeń. Niewidoczne dla ludzi pole formularza oraz sprawdzenie czasu wypełniania pozwalają rozpoznać automatyczne zgłoszenia. Nie są przy tym przechowywane żadne dodatkowe dane osobowe.<br><br>Dodatkowo korzystamy z usługi Cloudflare Turnstile firmy Cloudflare, Inc., 101 Townsend St., San Francisco, CA 94107, USA. Turnstile jest ładowany dopiero wtedy, gdy zaczniesz wypełniać formularz kontaktowy. Informacje techniczne o Twoim urządzeniu i przeglądarce (w szczególności adres IP, cechy przeglądarki i połączenia) są przekazywane do Cloudflare i analizowane w celu sprawdzenia, czy zgłoszenie pochodzi od człowieka. Nie są przy tym ustawiane pliki cookie do celów reklamowych ani analitycznych.<br><br>Podstawą prawną jest nasz prawnie uzasadniony interes w skutecznej ochronie formularza kontaktowego przed nadużyciami i spamem (art. 6 ust. 1 lit. f RODO). Dostęp do informacji na Twoim urządzeniu jest niezbędny do udostępnienia formularza kontaktowego, z którego korzystasz (§ 25 ust. 2 pkt 2 niemieckiej ustawy TDDDG). Cloudflare posiada certyfikację w ramach EU-U.S. Data Privacy Framework. Przekazanie danych do USA odbywa się na podstawie decyzji Komisji Europejskiej stwierdzającej odpowiedni stopień ochrony (art. 45 RODO).<br><br>Więcej informacji znajdziesz w <a href=\"https://www.cloudflare.com/turnstile-privacy-policy/\" target=\"_blank\" rel=\"noopener\">informacjach o prywatności Turnstile</a> oraz w <a href=\"https://www.cloudflare.com/privacypolicy/\" target=\"_blank\" rel=\"noopener\">polityce prywatności Cloudflare</a>."
       }
     },
     "section7": {

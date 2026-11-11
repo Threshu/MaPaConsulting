@@ -1,9 +1,22 @@
 import * as v from 'valibot';
 import type { FormSubmitEvent } from '@nuxt/ui';
 
-export const useContactForm=() => {
+interface ContactFormOptions {
+  // resolves with a Cloudflare Turnstile token (null if unavailable)
+  getCaptchaToken?: () => Promise<string|null>;
+  resetCaptcha?: () => void;
+}
+
+export const useContactForm=(options: ContactFormOptions={}) => {
   const { t }=useI18n();
   const toast=useToast();
+
+  // Spam protection: honeypot value + time the form has been on screen
+  const honeypot=ref('');
+  let readyAt=0;
+  onMounted(() => {
+    readyAt=Date.now();
+  });
 
   const formSchema=v.object({
     name: v.pipe(v.string(), v.minLength(2, t('contact.form.validation.nameMin'))),
@@ -28,13 +41,24 @@ export const useContactForm=() => {
 
   const onSubmit=async (_event: FormSubmitEvent<FormSchema>) => {
     try {
+      const turnstileToken=options.getCaptchaToken
+        ? await options.getCaptchaToken()
+        :undefined;
+
+      if(options.getCaptchaToken&&!turnstileToken) {
+        throw { data: { code: 'CAPTCHA_FAILED' } };
+      }
+
       await $fetch('/api/contact', {
         method: 'POST',
         body: {
           name: formState.name,
           email: formState.email,
           subject: formState.subject,
-          message: formState.message
+          message: formState.message,
+          website: honeypot.value,
+          elapsedMs: readyAt? Date.now()-readyAt:undefined,
+          turnstileToken: turnstileToken??undefined
         }
       });
 
@@ -49,6 +73,7 @@ export const useContactForm=() => {
       formState.subject='';
       formState.message='';
       formState.privacyAccepted=false;
+      readyAt=Date.now();
     } catch(error: any) {
       const errorCode=error.data?.code||'UNKNOWN_ERROR';
       const errorMessage=t(`contact.form.errors.${errorCode}`)||t('contact.form.error');
@@ -58,10 +83,14 @@ export const useContactForm=() => {
         color: 'neutral',
         icon: 'i-heroicons-x-circle'
       });
+    } finally {
+      // Turnstile tokens are single-use
+      options.resetCaptcha?.();
     }
   };
 
   return {
+    honeypot,
     formState,
     formSchema,
     onSubmit

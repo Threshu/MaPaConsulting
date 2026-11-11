@@ -74,7 +74,21 @@ Edit `.env` and add your Formspree endpoint:
 
 ```env
 NUXT_FORMSPREE_ENDPOINT=https://formspree.io/f/YOUR_FORM_ID
+
+# Optional: Cloudflare Turnstile spam protection for the contact form.
+# Enforced on the server as soon as the secret key is set.
+NUXT_PUBLIC_TURNSTILE_SITE_KEY=
+NUXT_TURNSTILE_SECRET_KEY=
 ```
+
+> The site key is baked into the prerendered pages at build time – after
+> changing it on Netlify, trigger a new deploy.
+
+The contact form is additionally protected by a honeypot field, a minimum
+fill-in time (3 s), a same-origin check and server-side validation
+([server/api/contact.post.ts](server/api/contact.post.ts)). The contact e-mail
+address is never present in the HTML or JS bundle – it is assembled in the
+browser by [useProtectedEmail](app/composables/useProtectedEmail.ts).
 
 ### Development Server
 

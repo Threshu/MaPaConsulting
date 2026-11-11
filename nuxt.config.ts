@@ -11,7 +11,12 @@ export default defineNuxtConfig({
   },
 
   runtimeConfig: {
-    formspreeEndpoint: ''
+    formspreeEndpoint: '',
+    // Cloudflare Turnstile – verification is enforced once the secret is set
+    turnstileSecretKey: '',
+    public: {
+      turnstileSiteKey: ''
+    }
   },
 
   devServer: {

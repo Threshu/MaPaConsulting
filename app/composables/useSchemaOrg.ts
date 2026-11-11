@@ -16,7 +16,6 @@ export const useSchemaOrg=() => {
         ? 'Business consulting for operational excellence, process optimization and AI implementation'
         :'Doradztwo biznesowe w zakresie doskonałości operacyjnej, optymalizacji procesów i wdrażania AI',
     telephone: '+491759030149',
-    email: 'info@mapa-unternehmensberatung.de',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Lindenstraße 2',

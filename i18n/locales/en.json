@@ -15,9 +15,8 @@
       "phone": "Phone",
       "phoneValue": "+49 175 9030149",
       "email": "Email",
-      "emailValue": "info{'@'}mapa-unternehmensberatung.de",
       "location": "Location",
-      "locationValue": "Esslebach, Germany",
+      "locationValue": "Esselbach, Germany",
       "linkedin": "LinkedIn",
       "linkedinValue": "Mario Pape"
     }
@@ -94,9 +93,8 @@
     "callMe": "Call me",
     "viewLocation": "View location",
     "info": {
-      "email": "info{'@'}mapa-unternehmensberatung.de",
       "phone": "+49 175 9030149",
-      "address": "Lindenstraße 2, 97839 Esslebach"
+      "address": "Lindenstraße 2, 97839 Esselbach"
     },
     "form": {
       "name": "Name",
@@ -110,7 +108,9 @@
         "MISSING_FIELDS": "Please fill in all fields.",
         "NOT_CONFIGURED": "Contact form not configured. Please contact us directly.",
         "SEND_FAILED": "Failed to send message. Please try again later.",
-        "UNKNOWN_ERROR": "An unexpected error occurred. Please try again."
+        "UNKNOWN_ERROR": "An unexpected error occurred. Please try again.",
+        "CAPTCHA_FAILED": "The security check could not be completed. Please try again or contact us by phone or email.",
+        "FORBIDDEN": "The request was rejected. Please reload the page and try again."
       },
       "validation": {
         "nameMin": "Name must be at least 2 characters",
@@ -159,7 +159,7 @@
     },
     "contact": {
       "title": "Contact",
-      "content": "Phone: +491759030149<br>Email: info{'@'}mapa-unternehmensberatung.de"
+      "content": "Phone: +491759030149<br>Email: {email}"
     },
     "tax": {
       "title": "VAT",
@@ -189,11 +189,11 @@
     },
     "section1": {
       "title": "I. Name and Address of the Controller",
-      "content": "The controller within the meaning of the General Data Protection Regulation and other national data protection laws is:<br><br><strong>Mario Pape</strong><br>Lindenstraße 2<br>97839 Esselbach<br>+491759030149<br>Email: info{'@'}mapa-unternehmensberatung.de<br>Website: mapa-unternehmensberatung.de"
+      "content": "The controller within the meaning of the General Data Protection Regulation and other national data protection laws is:<br><br><strong>Mario Pape</strong><br>Lindenstraße 2<br>97839 Esselbach<br>+491759030149<br>Email: {email}<br>Website: mapa-unternehmensberatung.de"
     },
     "section2": {
       "title": "II. Name and Address of the Data Protection Officer",
-      "content": "The data protection officer of the controller is:<br><br><strong>Mario Pape</strong><br>Lindenstraße 2<br>97839 Esselbach<br>+491759030149<br>Email: info{'@'}mapa-unternehmensberatung.de<br>Website: mapa-unternehmensberatung.de"
+      "content": "The data protection officer of the controller is:<br><br><strong>Mario Pape</strong><br>Lindenstraße 2<br>97839 Esselbach<br>+491759030149<br>Email: {email}<br>Website: mapa-unternehmensberatung.de"
     },
     "section3": {
       "title": "III. General Information on Data Processing",
@@ -256,7 +256,7 @@
       "title": "VI. Contact Form and Email Contact",
       "subsection1": {
         "title": "1. Description and Scope of Data Processing",
-        "content": "A contact form is available on our website which can be used for electronic contact."
+        "content": "A contact form is available on our website which can be used for electronic contact. The data entered in the form (name, email address, subject, message) is transmitted to us. Alternatively, you can contact us via the email address provided. In this case, the personal data transmitted with the email will be stored."
       },
       "subsection2": {
         "title": "2. Legal Basis for Data Processing",
@@ -273,6 +273,14 @@
       "subsection5": {
         "title": "5. Possibility of Objection and Removal",
         "content": "The user has the option to revoke consent to the processing of personal data at any time."
+      },
+      "subsection6": {
+        "title": "6. Delivery via Formspree",
+        "content": "Messages from the contact form are delivered to our mailbox via the Formspree service (Formspree, Inc., USA). For this purpose, the data you enter is transmitted to Formspree and processed there solely for delivery. Processing of the data in the USA cannot be ruled out. The legal basis is your consent, which you give before submitting the form (Art. 6 para. 1 lit. a GDPR).<br><br>Further information can be found in the <a href=\"https://formspree.io/legal/privacy-policy\" target=\"_blank\" rel=\"noopener\">Formspree privacy policy</a>."
+      },
+      "subsection7": {
+        "title": "7. Spam Protection (Cloudflare Turnstile)",
+        "content": "To protect the contact form against automated requests (spam), we use several measures. A form field that is invisible to humans and a check of the time taken to fill in the form detect automated submissions. No additional personal data is stored in this process.<br><br>In addition, we use the Cloudflare Turnstile service provided by Cloudflare, Inc., 101 Townsend St., San Francisco, CA 94107, USA. Turnstile is only loaded once you start entering data in the contact form. Technical information about your device and browser (in particular IP address, browser and connection characteristics) is transmitted to Cloudflare and evaluated to verify that the input comes from a human. No cookies for advertising or analytics purposes are set.<br><br>The legal basis is our legitimate interest in effectively protecting the contact form against abuse and spam (Art. 6 para. 1 lit. f GDPR). Access to information on your device is strictly necessary to provide the contact form you are using (Section 25 para. 2 no. 2 TDDDG). Cloudflare is certified under the EU-U.S. Data Privacy Framework. The transfer to the USA is based on the adequacy decision of the European Commission (Art. 45 GDPR).<br><br>Further information can be found in the <a href=\"https://www.cloudflare.com/turnstile-privacy-policy/\" target=\"_blank\" rel=\"noopener\">Turnstile privacy notice</a> and the <a href=\"https://www.cloudflare.com/privacypolicy/\" target=\"_blank\" rel=\"noopener\">Cloudflare privacy policy</a>."
       }
     },
     "section7": {

@@ -5,7 +5,21 @@
 			:schema="formSchema"
 			class="contact-form"
 			@submit="onSubmit"
+			@focusin="activateCaptcha"
 		>
+			<!-- Honeypot: invisible for humans, bots fill every field -->
+			<div class="hp-field" aria-hidden="true">
+				<label for="contact-website">Website</label>
+				<input
+					id="contact-website"
+					v-model="honeypot"
+					type="text"
+					name="website"
+					tabindex="-1"
+					autocomplete="off"
+				/>
+			</div>
+
 			<UFormField :label="t('contact.form.name')" name="name" required>
 				<UInput
 					v-model="formState.name"
@@ -67,7 +81,13 @@
 				</UCheckbox>
 			</UFormField>
 
-			<CtaButton type="submit" icon="i-heroicons-paper-airplane">
+			<ContactTurnstile
+				v-if="captchaActive"
+				ref="captcha"
+				:site-key="turnstileSiteKey"
+			/>
+
+			<CtaButton type="submit" icon="i-heroicons-paper-airplane" loading-auto>
 				{{ t("contact.form.send") }}
 			</CtaButton>
 		</UForm>
@@ -77,7 +97,30 @@
 <script setup lang="ts">
 	const { t } = useI18n();
 	const localePath = useLocalePath();
-	const { formState, formSchema, onSubmit } = useContactForm();
+	const turnstileSiteKey = useRuntimeConfig().public.turnstileSiteKey as string;
+	const captcha = ref<{
+		getToken: () => Promise<string | null>;
+		reset: () => void;
+	} | null>(null);
+
+	// Turnstile loads only after the visitor starts using the form
+	const captchaActive = ref(false);
+	const activateCaptcha = () => {
+		if (turnstileSiteKey) captchaActive.value = true;
+	};
+
+	const { honeypot, formState, formSchema, onSubmit } = useContactForm(
+		turnstileSiteKey
+			? {
+					getCaptchaToken: async () => {
+						activateCaptcha();
+						await nextTick();
+						return captcha.value?.getToken() ?? null;
+					},
+					resetCaptcha: () => captcha.value?.reset(),
+				}
+			: {},
+	);
 </script>
 
 <style scoped>
@@ -88,7 +131,16 @@
 		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 	}
 
+	.hp-field {
+		position: absolute;
+		left: -10000px;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+	}
+
 	.contact-form {
+		position: relative;
 		display: flex;
 		flex-direction: column;
 		gap: 1.25rem;
